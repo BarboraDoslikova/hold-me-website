@@ -86,6 +86,14 @@ h2 {
 	width: 50%;
 	margin: 0 auto;
 }
+.about a {
+	font-style: italic;
+	color:#DBC9BF;
+	letter-spacing: 0.05em;
+}
+.about a:hover {
+	color: #8E8683;
+}
 /* TRAILER */
 .trailer {
 	width: 50%;
