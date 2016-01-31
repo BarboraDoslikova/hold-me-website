@@ -1,0 +1,133 @@
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+/* Fixes the clearing of floats on child elements */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* GENERAL */
+body {
+	font-family: "Hind", serif;
+	color: #DBC9BF;
+	text-align: center;
+	background: url("../images/poster-clean.jpg") no-repeat fixed;
+    background-size: cover;
+
+}
+.content-wrap {
+	margin: 5% 10% 5% 10%;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+/* TITLE */
+.title {
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 1.5em;
+}
+h1 {
+	font-size: 5em;
+	font-weight:100;
+	margin: 0.5em auto 0 auto;
+	letter-spacing: 0.05em;
+}
+
+/* NAVIGATION */
+.nav {
+	width: 75%;
+	list-style-type: none;	
+	margin: 0 auto;
+	margin-top: 2em;
+	margin-bottom: 4em;
+    border-top: 1px solid #DBC9BF;
+    border-bottom: 1px solid #DBC9BF;
+    text-transform: uppercase;
+}
+.nav li {
+	display: inline;
+	margin-left: 1.5em;
+}
+.nav li a {
+	font-size: 1.3em;
+	text-decoration: none;
+	color: #DBC9BF;
+	padding: 0.6em;
+}
+
+.nav li a:hover {
+    color: #8E8683;
+}
+.IMDb-icon {
+	height: 2em;
+	margin-top: auto;
+	margin-bottom: -0.7em;
+}
+.facebook-icon {
+	font-size: 1em;
+}
+
+/* COMING SOON */
+.coming {
+	margin-top: 2.2em;
+	margin-bottom: -1.7em;
+}
+h2 {
+	color:#DBC9BF;
+	font-size: 1em;
+	letter-spacing: 1em;
+}
+
+/* ABOUT */
+.about {
+	width: 50%;
+	margin: 0 auto;
+}
+/* TRAILER */
+.trailer {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 4em;
+}
+.trailer-frame {
+	width: 100%;
+	min-height: 19em;
+}
+
+/* POSTER */
+.poster {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 4em;
+	padding-bottom: 2em;
+}
+.poster-image {
+  width: 100%;
+}
+
+/* FOOTER */
+.footer-nav {
+	list-style-type: none;
+	background: white;
+	height: 3em;
+}
+.footer-nav li {
+	display: inline;
+}
+.cliche {
+	font-family: Times, serif;
+	color: black;
+	text-decoration: none;
+}
+.left {
+	height: 3em;
+	margin-right: 1em;	
+	margin-bottom: -1.2em;
+}
+.right {
+	height: 3em;
+	margin-bottom: -1.2em;
+}
