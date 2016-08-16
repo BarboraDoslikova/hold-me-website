@@ -15,7 +15,7 @@ body {
 	color: #DBC9BF;
 	text-align: center;
 	background: url("../images/poster-clean.jpg") no-repeat fixed;
-    background-size: cover;
+        background-size: cover;
 
 }
 .content-wrap {
@@ -30,6 +30,7 @@ body {
 body {
 	font-family: KozGoPro-ExtraLight;
 }
+
 /* TITLE */
 .title {
 	width: 60%;
@@ -50,9 +51,9 @@ h1 {
 	margin: 0 auto;
 	margin-top: 2em;
 	margin-bottom: 4em;
-    border-top: 1px solid #DBC9BF;
-    border-bottom: 1px solid #DBC9BF;
-    text-transform: uppercase;
+        border-top: 1px solid #DBC9BF;
+        border-bottom: 1px solid #DBC9BF;
+        text-transform: uppercase;
 }
 .nav li {
 	display: inline;
@@ -66,7 +67,7 @@ h1 {
 }
 
 .nav li a:hover {
-    color: #8E8683;
+        color: #8E8683;
 }
 .IMDb-icon {
 	height: 2em;
