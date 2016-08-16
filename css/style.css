@@ -1,12 +1,12 @@
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
-    box-sizing: border-box;
+        box-sizing: border-box;
 }
 /* Fixes the clearing of floats on child elements */
 .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+        content: "";
+        display: table;
+        clear: both;
 }
 
 /* GENERAL */
@@ -24,8 +24,8 @@ body {
 }
 /* FONTS */
 @font-face {
-    font-family: KozGoPro-ExtraLight;
-    src: url("../fonts/kozuka_gothic_pro_el/KozGoPro-ExtraLight.otf");
+        font-family: KozGoPro-ExtraLight;
+        src: url("../fonts/kozuka_gothic_pro_el/KozGoPro-ExtraLight.otf");
 }
 body {
 	font-family: KozGoPro-ExtraLight;
@@ -121,7 +121,7 @@ h2 {
 	padding-bottom: 2em;
 }
 .poster-image {
-    width: 100%;
+        width: 100%;
 }
 
 /* FOOTER */
