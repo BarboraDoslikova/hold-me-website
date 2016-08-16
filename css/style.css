@@ -1,28 +1,35 @@
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
-  box-sizing: border-box;
+        box-sizing: border-box;
 }
 /* Fixes the clearing of floats on child elements */
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+        content: "";
+        display: table;
+        clear: both;
 }
 
 /* GENERAL */
 body {
-	font-family: "Hind", serif;
+	font-family: "Hind", sans-serif;
 	color: #DBC9BF;
 	text-align: center;
 	background: url("../images/poster-clean.jpg") no-repeat fixed;
-    background-size: cover;
+        background-size: cover;
 
 }
 .content-wrap {
 	margin: 5% 10% 5% 10%;
 	background: rgba(0, 0, 0, 0.7);
 }
-
+/* FONTS */
+@font-face {
+        font-family: KozGoPro-ExtraLight;
+        src: url("../fonts/kozuka_gothic_pro_el/KozGoPro-ExtraLight.otf");
+}
+body {
+	font-family: KozGoPro-ExtraLight;
+}
 /* TITLE */
 .title {
 	width: 60%;
@@ -43,9 +50,9 @@ h1 {
 	margin: 0 auto;
 	margin-top: 2em;
 	margin-bottom: 4em;
-    border-top: 1px solid #DBC9BF;
-    border-bottom: 1px solid #DBC9BF;
-    text-transform: uppercase;
+        border-top: 1px solid #DBC9BF;
+        border-bottom: 1px solid #DBC9BF;
+        text-transform: uppercase;
 }
 .nav li {
 	display: inline;
@@ -59,7 +66,7 @@ h1 {
 }
 
 .nav li a:hover {
-    color: #8E8683;
+        color: #8E8683;
 }
 .IMDb-icon {
 	height: 2em;
@@ -113,7 +120,7 @@ h2 {
 	padding-bottom: 2em;
 }
 .poster-image {
-  width: 100%;
+        width: 100%;
 }
 
 /* FOOTER */
@@ -126,7 +133,7 @@ h2 {
 	display: inline;
 }
 .cliche {
-	font-family: Times, serif;
+	font-family: "Cuprum", Times, serif;
 	color: black;
 	text-decoration: none;
 }
