@@ -1,12 +1,12 @@
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
-        box-sizing: border-box;
+    box-sizing: border-box;
 }
 /* Fixes the clearing of floats on child elements */
 .clearfix:after {
-        content: "";
-        display: table;
-        clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* GENERAL */
@@ -14,7 +14,7 @@ body {
 	font-family: "Hind", sans-serif;
 	color: #DBC9BF;
 	text-align: center;
-	background: url("../images/poster-clean.jpg") no-repeat fixed;
+	background: url("../images/hold-me-poster-clean.jpg") no-repeat fixed;
     background-size: cover;
 
 }
@@ -22,14 +22,16 @@ body {
 	margin: 5% 10% 5% 10%;
 	background: rgba(0, 0, 0, 0.7);
 }
+
 /* FONTS */
 @font-face {
-        font-family: KozGoPro-ExtraLight;
-        src: url("../fonts/kozuka_gothic_pro_el/KozGoPro-ExtraLight.otf");
+    font-family: KozGoPro-ExtraLight;
+    src: url("../fonts/kozuka_gothic_pro_el/KozGoPro-ExtraLight.otf");
 }
 body {
 	font-family: KozGoPro-ExtraLight;
 }
+
 /* TITLE */
 .title {
 	width: 60%;
@@ -60,13 +62,7 @@ h1 {
 }
 .nav li a {
 	font-size: 1.3em;
-	text-decoration: none;
-	color: #DBC9BF;
 	padding: 0.6em;
-}
-
-.nav li a:hover {
-    color: #8E8683;
 }
 .IMDb-icon {
 	height: 2em;
@@ -77,15 +73,39 @@ h1 {
 	font-size: 1em;
 }
 
-/* COMING SOON */
-.coming {
-	margin-top: 2.2em;
-	margin-bottom: -1.7em;
+/* WORLD PREMIERE */
+.premiere {	
+	width: 65%;
+	margin: 2em auto 3em auto;
 }
 h2 {
-	color:#DBC9BF;
 	font-size: 1em;
-	letter-spacing: 1em;
+	letter-spacing: 4px;
+	margin:0 auto 0 auto;
+	text-transform:uppercase;
+}
+h3 {
+	font-size: 1.1em;
+	margin-top: 0em;
+}
+h4 {
+	font-size: 0.9em;
+	margin: -1em auto 1em auto;
+}
+.premiere p {
+    margin-top: -0.5em;
+}
+.premiere p em {
+    font-size: 1em;
+}
+/* ONLINE RELEASE */
+.coming h2 {
+	margin-top: 2em;
+	font-size:1em;
+	letter-spacing:4px;
+	margin:0 auto 50px auto;
+	text-align:center;
+	text-transform:uppercase;
 }
 
 /* ABOUT */
@@ -95,12 +115,9 @@ h2 {
 }
 .about a {
 	font-style: italic;
-	color:#DBC9BF;
 	letter-spacing: 0.05em;
 }
-.about a:hover {
-	color: #8E8683;
-}
+
 /* TRAILER */
 .trailer {
 	width: 50%;
@@ -120,7 +137,7 @@ h2 {
 	padding-bottom: 2em;
 }
 .poster-image {
-        width: 100%;
+    width: 100%;
 }
 
 /* FOOTER */
@@ -145,4 +162,13 @@ h2 {
 .right {
 	height: 3em;
 	margin-bottom: -1.2em;
+}
+
+/* ALL LINKS */
+a {
+	color:#DBC9BF;
+	text-decoration: none;
+}
+a:hover {
+	color: #8E8683;
 }
