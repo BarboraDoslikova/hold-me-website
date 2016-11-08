@@ -1,33 +1,27 @@
 /* TABLE OF CONTENTS
 **************************************************************************/
-/*** ALL PAGES
+/*** ALL PAGES, ALL SCREEN SIZES
 (watch.html, testimonials.html, press-release.html,
 behind-the-scenes.html, cast.html, contact.html)
-  /* General
-  /* Header
-  /* Footer
+  /* Apply a natural box layout model to all elements
+  /* Fix the clearing of floats on child elements
+  /* FONTS
+  /* ALL LINKS
+  /* OTHER GENERAL
+  /* FOOTER
 
-/*** ALL PROJECT PAGES
-  /* Cover-small, Cover-large & Buy-now
-  /* Go-To-The-Top Button
-
-/*** SOME PROJECT PAGES
-  /* Share Icons (6 PROJECT PAGES)
-  /* Shorts (5 PROJECT PAGES except playreality.html)
-     /* shorts - excerpts
-  /* Colours (5 PROJECT PAGES except collection.html)
-     /* background-color
-     /* text & links - white
-     /* TEACE.ca
-  /* Summary (3 PROJECT PAGES)
-  /* Watch (2 PROJECT PAGES)
-
-/*** INDEX.HTML ONLY
-  /* Menu (index.html)
-  /* Scroll Pane (index.html)
-     /* general
-     /* inner
-     /* image transition
+/*** WATCH.html, ALL SCREEN SIZES
+  /* HOLD ME TITLE
+  /* WATCH SECTION
+  	/* SOCIAL-ICONS (FIRST li)   		(ul)
+  	/* TRAILER-FRAME (SECOND li) 		(ul li content)
+  	/* VIDEO-ICONS (SECOND li) 			(ul li ul)
+  	/* BUY-MOVIE-BUTTONS (THIRD li) 	(ul li)
+  	/* BUY-SOUNDTRACK-BUTTONS (THIRD li)(ul li)
+  /* LAURELS
+  /* PAGE MENU 
+  /* ABOUT
+  /* POSTER
 
 /* END TABLE OF CONTENTS
 **************************************************************************/
@@ -37,11 +31,11 @@ behind-the-scenes.html, cast.html, contact.html)
 /*** ALL PAGES, ALL SCREEN SIZES
 **************************************************************************/
 
-/* apply a natural box layout model to all elements */
+/* Apply a natural box layout model to all elements */
 *, *:before, *:after {
     box-sizing: border-box;
 }
-/* Fixes the clearing of floats on child elements */
+/* Fix the clearing of floats on child elements */
 .clearfix:after {
     content: "";
     display: table;
@@ -68,20 +62,20 @@ a:hover {
 	color: #8E8683;
 }
 .buy-movie-buttons a {
-	color: #6496c8; /* #6496c8 */
-	border: solid 5px #6496c8; /* 5px #6496c8 */
+	color: #785996; /* #6496c8 */
+	border: solid 5px #785996; /* 5px #6496c8 */
 }
 .buy-movie-buttons a:hover {
-	color: #a2c0de; /* #6496c8 */
-	border: solid 5px #a2c0de; /* 5px #6496c8 */
+	color: #ab8cc9; /* #6496c8 */
+	border: solid 5px #ab8cc9; /* 5px #6496c8 */
 }
 .buy-soundtrack-buttons a {
-	color: #6496c8; /* #6496c8 */
-	border: solid 5px #6496c8; /* 5px #6496c8 */
+	color: #785996; /* #6496c8 */
+	border: solid 5px #785996; /* 5px #6496c8 */
 }
 .buy-soundtrack-buttons a:hover {
-	color: #a2c0de; /* #6496c8 */
-	border: solid 5px #a2c0de; /* 5px #6496c8 */
+	color: #ab8cc9; /* #6496c8 */
+	border: solid 5px #ab8cc9; /* 5px #6496c8 */
 }
 
 /* OTHER GENERAL */
@@ -225,8 +219,13 @@ body { /* picture background */
 .click-icon {
 	line-height: 1em; /* to size it to max of the "a" */
 }
-.IMDb-icon {
-	height: 1em; /* to size it to max of the "a" */
+.IMDb-icon img {
+	height: 0.9em; /* to center with .click-icon's */
+	margin-top: 0.05em; /* to center with .click-icon's */
+	opacity: 1.0;	
+}
+.IMDb-icon img:hover {
+	opacity: 0.8;
 }
 
 /* TRAILER */
