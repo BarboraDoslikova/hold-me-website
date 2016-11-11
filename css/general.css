@@ -1,28 +1,21 @@
 /* TABLE OF CONTENTS
 **************************************************************************/
 /*** ALL PAGES, ALL SCREEN SIZES
-(watch.html, testimonials.html, press-release.html,
-behind-the-scenes.html, cast.html, contact.html)
+(watch.html, testimonials.html, press-release.html, behind-the-scenes.html, cast.html, contact.html)
   /* Apply a natural box layout model to all elements
   /* Fix the clearing of floats on child elements
   /* FONTS
   /* ALL LINKS
   /* OTHER GENERAL
   /* FOOTER
-
-/*** WATCH.html, ALL SCREEN SIZES
-  /* HOLD ME TITLE
-  /* WATCH SECTION
-  	/* SOCIAL-ICONS (FIRST li)   		(ul)
-  	/* TRAILER-FRAME (SECOND li) 		(ul li content)
-  	/* VIDEO-ICONS (SECOND li) 			(ul li ul)
-  	/* BUY-MOVIE-BUTTONS (THIRD li) 	(ul li)
-  	/* BUY-SOUNDTRACK-BUTTONS (THIRD li)(ul li)
-  /* LAURELS
+/*** SOME PAGES, ALL SCREEN SIZES
+  /* HEADER + MENU (5x: testimonials.html, press-release.html, behind-the-scenes.html, cast.html, contact.html)
   /* PAGE MENU 
+  /* VIDEO-ICONS (6x)
+  /* IMDB ICON (6x)
+  /* PAGE MENU (4x: watch.html, testimonials.html, press-release.html, behind-the-scenes.html)
   /* ABOUT
-  /* POSTER
-
+  /* GO TO TOP BUTTON
 /* END TABLE OF CONTENTS
 **************************************************************************/
 
@@ -61,6 +54,13 @@ a {
 a:hover {
 	color: #8E8683;
 }
+.fa-bars {
+  color:#DBC9BF;
+  text-decoration: none;
+}
+.fa-bars:hover {
+  color: #8E8683;
+}
 .buy-movie-buttons a {
 	color: #785996; /* #6496c8 */
 	border: solid 5px #785996; /* 5px #6496c8 */
@@ -76,6 +76,20 @@ a:hover {
 .buy-soundtrack-buttons a:hover {
 	color: #ab8cc9; /* #6496c8 */
 	border: solid 5px #ab8cc9; /* 5px #6496c8 */
+}
+.watch {
+  color: #785996; /* #6496c8 */
+  border: solid 5px #785996; /* 5px #6496c8 */
+}
+.watch:hover {
+  color: #ab8cc9; /* #6496c8 */
+  border: solid 5px #ab8cc9; /* 5px #6496c8 */
+}
+.watch a {
+  color: #785996; /* #6496c8 */
+}
+.watch a:hover {
+  color: #ab8cc9; /* #6496c8 */
 }
 
 /* OTHER GENERAL */
@@ -145,94 +159,258 @@ body { /* picture background */
 	}
 }
 
+/*** SOME PAGES, ALL SCREEN SIZES
+**************************************************************************/
+/* HEADER  li's */
+.header > li {
+  display: block;  
+}
+/* HEADER  title */
+.header .title a {  
+  font-size: 2.3em;
+  line-height: 2.3em;
+  letter-spacing: 0.05em;  
+}
+/* HEADER  watch-bundle */
+.header .watch-bundle li {
+  display: inline-block;
+}
+/* HEADER  watch */
+.header .watch {
+  font-size: 1.7em; /* to match image-icon at height 1.75em */ 
+  font-weight: bold;
+  line-height: 1.4em;
+  letter-spacing: 0.075em;  
+  border-radius: 0.85em; /* 15px */ 
+  padding: 0.5em 1.3em; /* 10px 25px */
+  display: inline-block;
+  margin: 0.15em auto 0.15em auto;
+}
+/* HEADER  video icons */
+.header .video-icons { /* over-ride over general.css */
+  margin-top: 0em;
+}
+.header .video-icons li { /* over-ride over general.css */
+  display: block;
+}
+/* HEADER MENU */
+/* Stretch menu to the width of content-wrap */
+.menu {
+  display: none; /* used to be 0 */
+  width: 18em;
+  margin: auto;
+}
+/* Create a horizontal list with spacing */
+.menu > li {
+  /*width: 16em;  to show whole caregiver testimonials */
+  margin: 0em; /* used to be margin: 1em 0.5em auto 0.5em; */
+}
+/* Style for main and dropdown menu links */
+.menu li a {
+  display: block; /* for neater look */
+  height: 2.75em;
+  line-height: 2.75em;
+  font-size: 1.2em; /* to match look of PAGE MENU */
+  letter-spacing: 0.05em; /* to match look of PAGE MENU */
+}
+/* Hide dropdown links until they are needed */
+.menu li ul {
+  display: none;
+  margin-top: -0.75em; /* Move menu dropdown links slightly upwards */
+}
+/*Make dropdown links vertical*/
+.menu li ul li {
+  display: block;
+}
+/* Style for dropdown links */
+.menu li:hover ul a {
+  font-size: 1em;
+  height: 1.5em;
+  line-height: 1.5em;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+  display: block;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+  display: block; /* none */
+  margin: 0.5em 0em;  
+}
+.show-menu i {
+  font-size: 1.5em;
+    line-height: 1.5em;
+}
+/* HEADER Responsive Styles*/
+@media (min-width: 800px) { 
+  .header {
+    
+  }
+}
+/* MENU Responsive Styles */
+@media screen and (min-width : 1350px){ /* used to be max */
+  .header {
+    margin: 0.5em auto;
+    min-height: 6.5em;
+    border:  none;
+  } 
+  .title {
+    float: left;
+    padding-left: 3em;
+    margin-top: 0.5em;
+  }
+  .second {
+    float: left;
+    padding-left: 2em;
+    margin-top: 0.5em;
+  }
+  /*Display 'show menu' link*/
+  .show-menu {
+    display: none; /* used to be display: block */
+  }
+  /*Make dropdown links appear inline*/
+  .menu {
+    display: block; /* has to say BLOCK to show itself */
+    width: 43em;
+  }
+  .menu {
+    float: right;
+    margin-top: 1.5em;
+    padding-right: 1em;
+  }
+  .menu > li {  
+    display: inline-block;
+    margin: 0em 0.65em 0em 0.65em;
+    font-size: 0.9em;
+  }
+  .menu li ul { 
+    margin-bottom: 0.5em;
+  }
+}
+
 
 
 
 
 
+/* PAGE MENU */
+.page-menu li {
+  margin: 0.5em auto 0.5em auto;
+}
+/* Hide dropdown links until they are needed */
+.page-menu li ul {
+  display: none;
+}
+/* Style for main and dropdown menu links */
+.page-menu li a {
+  display: block; /* for neater look */
+  height: 1.75em;
+  line-height: 1.75em;
+  font-size: 1.2em; /* to match look of PAGE MENU */
+  letter-spacing: 0.05em; /* to match look of PAGE MENU */
+}
+/* Style for only dropdown links */
+.page-menu li:hover ul a {  
+  height: 1.5em;
+  line-height: 1.5em;
+  font-size: 1em; 
+  margin-top: -0.5em; /* Move menu dropdown links slightly upwards */
+}
+/*Display the dropdown on hover*/
+.page-menu ul li a:hover + .hidden, .hidden:hover {
+  display: block; /* to actually show it*/
+}
+@media (min-width: 920px) {
+  /* Style for only main links */
+  .page-menu > ul > li {
+    display: inline-block;
+    margin: 1em 0.5em;
+  }
+}
+@media (min-width: 1155px) { /* center 1,2,3 */
+  .page-menu > ul > li {
+    margin: 1em 1.5em;
+  }  
+}
+
 
 
 
 
-
-h2 {  /* Section titles */
-	font-size: 1em;
-	letter-spacing: 4px;
-	margin:0 auto 0 auto;
-	text-transform:uppercase;
+/* IMDB ICON */
+.IMDb-icon img {
+  height: 0.9em; /* to center with .click-icon's */
+  margin-top: 0.05em; /* to center with .click-icon's */
+  opacity: 1.0; 
+}
+.IMDb-icon img:hover {
+  opacity: 0.8;
 }
 
-/* WORLD PREMIERE */
-.premiere {	
-	width: 65%;
-	margin: 2em auto 3em auto;
+
+/* VIDEO ICONS */
+.video-icons {
+  margin-top: 0.5em;
 }
-.premiere p {
-	margin-top: -0.05em;
+.video-icons li {
+  display: inline-block;
+  line-height: 1.4em;
+}
+.image-icon {
+  height: 1.65em;
+}
+@media (min-width: 400px) {
+  .image-icon {
+    height: 2em; 
+  }
+  .header .image-icon {
+    height: 1.65em; 
+  }
 }
 
-/* ONLINE RELEASE */
-.coming h2 {
-	margin-top: 2em;
-	margin-bottom: 3em;
+
+
+/* ABOUT */
+.about {
+  width: 90%;
+  margin: 0 auto;
+}
+.about p {
+  margin: 0.5em auto 0.5em auto;
+  line-height: 1.4em;
+  letter-spacing: 0.01em;
+}
+.about a {  
+  font-style: italic;
+  letter-spacing: 0.14em;
+}
+@media (min-width: 493px) {
+  .about p {
+    max-width: 25em;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    margin: 1.5em auto 1.5em auto;
+  } 
+}
+@media (min-width: 920px) {
+  .about p {
+    margin: 2.5em auto 2.5em auto;
+    line-height: 1.6em;
+    font-size: 1.2em;
+    max-width: 28em;
+  }
 }
 
-/* MEDIA ROOM */
-.media-room .poster {
-	width: 33%;
-	margin: 0 auto;
-	margin-top: 4em;
-	padding-bottom: 2em;
-}
-.media-room .poster-image {
-    width: 100%;
-}
-.media-room .cast-image {
-    width: 80%;
-}
-.media-room h1 {
-	font-size: 1.9em;
-}
-.media-room h2 {
-	font-size: 1em;
-}
-.media-room h3 {
-	margin-top: 1.9em;
-}
-.media-room h5 {
-	font-size: 1em;	
-}
-.media-room .second-h5 {
-	margin-top: -1.5em;
-}
-.media-room p {
-	width: 60%;
-	margin: 1.2em auto 0 auto;
-    text-align: left;
-}
-.media-room p { /* fixes too thin font in Safari */
-	-webkit-font-smoothing: subpixel-antialiased;
-	-webkit-text-stroke: 0.3px white;
-}
-.tg {
-	width: 80%;
-	margin: 0 auto;
-}
-.tg h4 {
-    margin-top: 2em;
-}
-.cast-image {
-	max-width: 200px;
-}
 
-.contacts p {
-	margin-top: 0em;
-}
-.email-image {
-	width: 40%;
-	min-width: 200px;
-	margin-left: 2em;
-}
+
 /* Go-To-The-Top Button */
 .go-top {
   position: fixed;
@@ -251,6 +429,26 @@ h2 {  /* Section titles */
 .go-top:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
