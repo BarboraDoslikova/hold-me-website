@@ -30,27 +30,7 @@
 } /* end @media (max-width: 319px) */
 
 
-/* MEDIA ROOM TITLES */
-.media-room h1 { /* Hold Me title */
-  font-size: 1.9em;
-  margin-top: 1em;
-}
-.media-room h2 { /* Press Release title */
-  font-size: 1.3em;
-  margin-top: 0.25em;
-}
-.media-room h3 { /* logline etc. subsection titles */
-  margin-top: 1.9em;
-}
-.media-room h4 { /* download */
-  font-size: 0.9em;
-  margin-top: 0.25em; 
-}
-.media-room h5 { /* download with images */
-  font-size: 0.5em; 
-  margin-top: 0.25em;
-  margin-bottom: 2em;
-}
+/* MEDIA ROOM FONTS */
 .media-room p {
   text-align: left;
 }
@@ -128,4 +108,44 @@
   min-width: 200px;
   margin-left: 2em;
 }
+
+
+/* PRESS MENTIONS */
+.press-mentions {
+  width: 70%;
+  margin: 0em auto;
+  margin-bottom: 2em; 
+}
+.press-mentions li {
+  list-style-type: circle;  
+  text-align: left;
+}
+.press-mentions a {  
+  font-style: normal;
+  width: 100%;
+  letter-spacing: 0em;
+}
+.press-mentions p {
+  width: 100%;
+  margin: 0.5em auto 0.5em auto;
+  line-height: 1.4em;
+  letter-spacing: 0.01em;
+}
+@media (min-width: 493px) {
+  .press-mentions {
+    max-width: 30em;
+  } 
+  .press-mentions p {
+    line-height: 1.5em;
+    font-size: 1.2em;
+  } 
+}
+@media (min-width: 920px) {
+  .press-mentions p {
+    line-height: 1.6em;
+    font-size: 1.2em;
+    max-width: 28em;
+  }
+}
+
 
