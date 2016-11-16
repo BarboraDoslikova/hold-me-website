@@ -33,7 +33,7 @@
   <meta itemprop="name" content="Hold Me" />
   <meta itemprop="description" content="Hold Me feature film; the story of Hannah, a woman whose job it is to hold and console people who are being voluntarily euthanized." />
   <meta itemprop="image" content="http://www.teace.ca/images/logo-original.jpg" />
-
+  
   <!-- STYLE & FONTS -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -45,7 +45,7 @@
   <link rel="stylesheet" type="text/css" href="css/general.css">
   
   <!-- watch.html page, all screen sizes -->
-  <link rel="stylesheet" type="text/css" href="css/watch-page.css"> 
+  <link rel="stylesheet" type="text/css" href="css/cast-page.css"> 
 
   <!-- all pages, all small devices 
   <link rel="stylesheet" media="(max-width: 639px)" href="css/general-max-639px.css"> -->
@@ -53,9 +53,10 @@
   <!-- all pages, all large devices 
   <link rel="stylesheet" media="(min-width: 640px)" href="css/general-min-640px.css"> -->
 
+
   <!-- latest jQuery direct from google's CDN -->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  
+
   <!-- Google Analytics -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -71,118 +72,117 @@
 </head>
 
 <body>
-  <div class="content-wrap">    
 
-    <div class="title">
-      <p>Hold Me</p>      
-    </div>
+<div class="content-wrap">    
 
-    <ul class="watch-section">
-     
-      <li> <!-- first section -->         
-        <ul class="social-icons">        
-          <li><a class="click-icon" href="https://www.facebook.com/holdmemovie/?ref=hl" target="_blank"><i class="fa fa-facebook-square facebook-icon"></i></a></li>
-          <li><a class="click-icon" href="https://twitter.com/holdmemovie" target="_blank"><i class="fa fa-twitter-square twitter-icon"></i></a></li>
-          <li><a class="IMDb-icon" href="http://www.imdb.com/title/tt4960212/?ref_=fn_al_tt_1" target="_blank"><img src="images/IMDb_icon.png" alt="IMDb icon"></a></li>
-          <li><a class="click-icon" href="https://youtu.be/ftkHTCg1S6U" target="_blank"><i class="fa fa-youtube-square youtube-icon"></i></a></li>
-        </ul>
+    <ul class="header">
+      <li class="title">
+          <a href="watch.html">Hold Me</a>
       </li>
-
-      <li> <!-- second section -->
-        <ul>
-          <li><iframe class="trailer-frame" src="https://www.youtube.com/embed/ftkHTCg1S6U" frameborder="0" allowfullscreen></iframe></li>
+      <li class="second">
+        <ul class="watch-bundle">
+          <li class="watch">
+              <a href="watch.html">Watch</a>  
+          </li>
           <li>
             <ul class="video-icons">
-              <li><img class="image-icon" src="images/amazon_icon.png" alt="amazon icon"></li> 
-              <li><img class="image-icon" src="images/google_icon.png" alt="google play icon"></li>
-              <li><img class="image-icon" src="images/itunes_icon.png" alt="apple iTunes icon"></li>
-            </ul> <!--end .video-icons -->
+                  <li><img class="image-icon" src="images/amazon_icon.png" alt="amazon icon"></li> 
+                  <li><img class="image-icon" src="images/google_icon.png" alt="google play icon"></li>
+                  <li><img class="image-icon" src="images/itunes_icon.png" alt="apple iTunes icon"></li>
+              </ul> <!--end .video-icons -->
           </li>
         </ul>
-      </li>     
-
-      <li> <!-- third section -->
-        <ul class="buy-icons"> 
-          <li class="buy-movie-buttons">
-            <ul class="buy-movie-buttons-english">
-              <li><a class="english-button" href="https://holdme.vhx.tv/buy/hold-me">Watch the film</a></li>
-            </ul>
-            <ul>
-              <li><a href="https://holdme.vhx.tv/buy/hold-me-serrez-moi-francais">Fran&#231;ais</a></li>
-              <li><a href="https://holdme.vhx.tv/buy/hold-me-abrazame-espanol">Espa&#241;ol</a></li>
-              <li><a href="https://holdme.vhx.tv/buy/hold-me-halt-mich-deutsche">Deutsche</a></li>
-              <li><a href="https://holdme.vhx.tv/buy/hold-me-bao-kisimete-ri-ben-yu">日本語</a></li>
-              <li><a href="">Nederlands</a></li>
-            </ul>
-          </li> <!-- end .buy-movie-buttons -->          
-        </ul> 
-
-      </li> <!-- end third section -->
-    </ul> <!-- end .watch-section --> 
-
-    <ul class="watch-bottom">      
-      <li class="laurels">     
-        <img class="laurel-image" src="images/laurels-MWFF.png" alt="Hold Me the movie laurels from the Montreal World Film Festival">
-        <img class="laurel-image" src="images/laurels-RIFF.png" alt="Hold Me the movie laurels from the Rome International Film Festival">
       </li>
-
-      <li class="buy-soundtrack-buttons">
-        <ul>
-          <li><img class="soundtrack-image" src="images/hold-me-soundtrack-front.jpg" alt="hold me soundtrack front"></li>
-          <li><a href="https://holdme.vhx.tv/buy/hold-me">Buy Soundtrack</a></li>
+      <li class="third">
+        <label for="show-menu" class="show-menu"><i class="fa fa-bars" aria-hidden="true"></i></label>
+        <input type="checkbox" id="show-menu" role="button">
+        <ul id="menu" class="menu">
+          <li>
+            <a href="testimonials.html">CAREGIVER TESTIMONIALS</a>
+          </li>
+          <li>
+            <a href="press-release.html">PRESS RELEASE</a>
+          </li>
+          <li>
+            <a href="behind-scenes.html">BEHIND THE SCENES</a>
+          </li>
+          <li><a href="cast.html">CAST</a></li>
         </ul>
-      </li> <!-- end .buy-soundtrack-buttons -->      
-    </ul> 
-    
-    
-
-    <div class="quotes">      
-    </div>
+      </li>
+    </ul> <!--end .header -->
 
   </div> <!-- end .content-wrap -->
 
 
-
   <div class="content-wrap">
 
-    <div class="page-menu">
-      <ul>
-        <li>
-          <a href="testimonials.html">CAREGIVER TESTIMONIALS</a>
-        </li>
-        <li>
-          <a href="press-release.html">PRESS RELEASE</a>
-        </li>
-        <li>
-          <a href="behind-scenes.html">BEHIND THE SCENES</a>
-        </li>
-        <li>
-          <a href="cast.html">CAST</a>
-        </li>
-      </ul>
-    </div>
-
-  </div> <!-- end .content-wrap -->
+    <div class="cast-content">
 
 
+      <div class="cast">
+        <h1>Cast</h1>
 
-  <div class="content-wrap">
+        <div class="tg">
+          <ul class="tr">
+            <li class="tg-yw4l">
+              <h4>Hannah Fierman</h4>
+              <img class="cast-image" src="images/press-release-materials/Hannah-Fierman-Hold-Me-Cast-Pic.png" alt="Hannah Fierman Hold Me Movie Cast Pic">
+            </li>
+            <li class="tg-yw4l">
+              <h4>Laura Kenny</h4>
+              <img class="cast-image" src="images/press-release-materials/Laura-Kenny-Hold-Me-Cast-Pic.png" alt="Laura Kenny Hold Me Movie Cast Pic">
+            </li>
+            <li class="tg-yw4l">
+              <h4>Daniel Harray</h4>
+              <img class="cast-image" src="images/press-release-materials/Daniel-Harray-Hold-Me-Cast-Pic.png" alt="Daniel Harray Hold Me Movie Cast Pic">
+            </li>
+          </ul>
+          <ul class="tr">
+            <li class="tg-yw4l">
+              <h4>Rob Krakovski</h4>
+              <img class="cast-image" src="images/press-release-materials/Rob-Krakovski-Hold-Me-Cast-Pic.png" alt="Rob Krakovski Hold Me Movie Cast Pic">
+            </li>
+            <li class="tg-yw4l">
+              <h4>Shannon Baker</h4>
+              <img class="cast-image" src="images/press-release-materials/Shannon-Baker-Hold-Me-Cast-Pic.png" alt="Shannon Baker Hold Me Movie Cast Pic">
+            </li>
+            <li class="tg-yw4l">
+              <h4>Audrey Henningham</h4>
+              <img class="cast-image" src="images/press-release-materials/Audrey-Henningham-Hold-Me-Cast-Pic.png" alt="Audrey Henningham Hold Me Movie Cast Pic">
+            </li>
+          </ul>
+          <ul class="tr">
+            <li class="tg-yw4l">
+              <h4>Heather Benton</h4>
+              <img class="cast-image" src="images/press-release-materials/Heather-Benton-Hold-Me-Cast-Pic.png" alt="Heather Benton Hold Me Movie Cast Pic">
+            </li>
+            <li class="tg-yw4l">
+              <h4>Curtis Rind</h4>
+              <img class="cast-image" src="images/press-release-materials/Curtis-Rind-Hold-Me-Cast-Pic.png" alt="Curtis Rind Hold Me Movie Cast Pic">
+            </li>
+            <li class="tg-yw4l">
+              <h4>Teace Snyder</h4>
+              <img class="cast-image" src="images/press-release-materials/Teace-Snyder-Hold-Me-Cast-Pic.png" alt="Teace Snyder Hold Me Movie Cast Pic">
+            </li>
+          </ul>
+          <ul class="tr">
+            <li class="tg-yw4l">
+            </li>
+            <li class="tg-yw4l">
+              <h4>Lianna Shannon</h4>
+              <img class="cast-image" src="images/press-release-materials/Lianna-Shannon-Hold-Me-Cast-Pic.png" alt="Lianna Shannon Hold Me Movie Cast Pic">
+            </li>
+            <li class="tg-yw4l">
+            </li>
+          </ul>
+        </div> <!-- end .tg -->
+        
+      </div> <!-- end .cast -->
 
-    <div class="about">     
-      <p>Hold Me is the story of Hannah, a woman whose job it is to hold and console people who are being voluntarily euthanized</p>
-    </div>
+    </div> <!-- end .cast-content -->
+    
+  </div> <!-- end .content-wrap --> 
 
-    <div class="about">     
-      <p>Filmed in Edmonton, Alberta, Canada and New York, NY, Hold Me is <a href="http://www.imdb.com/name/nm4061744/">Teace Snyder</a> and <a href="http://www.imdb.com/name/nm3822837/">Aksel Stasny's</a> first feature film together. Starring <a href="http://www.imdb.com/name/nm2689823/">Hannah Fierman</a> and <a href="http://www.imdb.com/name/nm0448592/">Laura Kenny</a> as mother and daughter, the film challenges us to glimpse the final moments of life in the context of a loving goodbye&#8211;to consider the struggles and sacrifices of those who work in palliative care&#8211;and to find the courage to talk about it.</p>
-    </div>
-
-  </div> <!-- end .content-wrap -->    
-
-
-
-  <div id="poster" class="poster">
-    <img class="poster-image" src="images/hold-me-poster.jpg" alt="Hold Me the movie poster">
-  </div>
 
 
 
@@ -216,7 +216,8 @@
   <!-- STICKY GO TO THE TOP BUTTON -->
   <a href="#" class="go-top"> 
     <i class="fa fa-arrow-circle-up"></i>
-  </a>
+  </a> 
+
 
   <script> 
     $(document).ready(function() {
@@ -236,10 +237,7 @@
         $('html, body').animate({scrollTop: 0}, 300);
       })
     });
-  </script> 
-    
-  <!-- vhx.tv checkout embed script -->
-  <script src="https://cdn.vhx.tv/assets/api.js"></script>
+  </script>
 
 </body>
 </html>
