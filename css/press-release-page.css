@@ -1,26 +1,4 @@
-/* TABLE OF CONTENTS
-**************************************************************************/
-/*** WATCH.html, ALL SCREEN SIZES
-  /* HOLD ME TITLE
-  /* WATCH SECTION TOP
-    /* SOCIAL-ICONS (FIRST li)      (ul)
-    /* TRAILER-FRAME (SECOND li)    (ul li content)
-    /* VIDEO-ICONS (SECOND li)      (ul li ul)
-    /* BUY-MOVIE-BUTTONS (THIRD li) (ul li)    
-  /* WATCH SECTION BOTTOM
-    /* BUY-SOUNDTRACK-BUTTONS
-    /* LAURELS
-  /* PAGE MENU 
-  /* ABOUT
-  /* POSTER
-/* END TABLE OF CONTENTS
-**************************************************************************/
 
-/* TABLE OF RESIZING
-**************************************************************************/
-
-/* END TABLE OF RESIZING
-**************************************************************************/
 
 
 @media (max-width: 319px) { /* no mobile phone has less than 320px */
@@ -31,19 +9,15 @@
 
 
 /* MEDIA ROOM FONTS */
+.media-room {
+  margin: 0 auto 2em auto;
+}
 .media-room p {
   text-align: left;
 }
 .fa-download {
   margin-top: 0.5em;
 }
-@media (min-width: 493px) {
-  .about h3 {
-    font-size: 1.4em;
-  } 
-}
-
-
 /* MEDIA ROOM POSTER */
 .media-room .poster {
   width: 75%;
@@ -56,10 +30,15 @@
     width: 100%;
 }
 
+
+
+
+
+
 /* MEDIA ROOM FILM STILLS & CAST */
 .tg {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 1em auto;
 }
 .cast-image {
     width: 90%;
@@ -94,6 +73,11 @@
       width: 33%;
   }
 }
+
+
+
+
+
 
 /* MEDIA ROOM CONTACTS */
 .contacts {

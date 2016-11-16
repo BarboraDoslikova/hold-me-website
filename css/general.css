@@ -47,25 +47,94 @@ body {
 }
 
 /* ALL TITLES */
-h1 { /* Hold Me title */
+h1 { /* "Hold Me" title in press-release; page titles */
   font-size: 1.9em;
   margin-top: 1em;
 }
-h2 { /* Press Release title */
+h2 { /* "Press Release" title */
   font-size: 1.3em;
   margin-top: 0.25em;
 }
-h3 { /* logline etc. subsection titles */
-  margin-top: 1.9em;
+
+h3 { /* "Logline" "Film Stills" etc. subsection */
+  margin: 1.9em auto 0em auto;
+  font-size: 1.1em;
+  line-height: 1.1em;
+  max-width: 75%;
 }
-h4 { /* download */
+@media (min-width: 493px) {
+  h3 {
+    font-size: 1.4em;
+    line-height: 1.4em;
+  } 
+}
+
+h4 { /* "Download" */
   font-size: 0.9em;
+  line-height: 0.9em;
   margin-top: 0.25em; 
 }
-h5 { /* download with images */
+h5 { /* "Download with images" */
   font-size: 0.5em; 
   margin-top: 0.25em;
   margin-bottom: 2em;
+}
+
+/* ALL p (paragraphs) */
+/* in div .about and not in div .footer */
+.about {
+  width: 90%;
+  margin: 0 auto;
+}
+.about p {
+  margin: 0.5em auto 0.5em auto;
+  font-size: 1em;
+  line-height: 1.4em;
+  letter-spacing: 0.01em;
+}
+.about a {  
+  font-style: italic;
+  letter-spacing: 0.14em;
+}
+@media (min-width: 493px) {
+  .about p {
+    margin: 1.5em auto 1.5em auto;
+    font-size: 1.2em;
+    line-height: 1.5em;    
+    max-width: 25em;
+  } 
+}
+@media (min-width: 920px) {
+  .about p {
+    margin: 2.5em auto 2.5em auto;
+    line-height: 1.6em;
+    max-width: 28em;
+  }
+}
+/* in div .intro */
+.intro {
+  width: 90%;
+  margin: 0 auto;
+}
+.intro p {
+  margin: 0.5em auto 0em auto;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  letter-spacing: 0.01em;
+}
+@media (min-width: 493px) {
+  .intro p {
+    max-width: 25em;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    margin: 1em auto 0em auto;
+  } 
+}
+@media (min-width: 920px) {
+  .intro p {
+    margin: 1em auto 0em auto;
+    line-height: 1.6em;
+  }
 }
 
 /* ALL LINKS */
@@ -400,36 +469,7 @@ input[type=checkbox]:checked ~ #menu{
 
 
 
-/* ABOUT */
-.about {
-  width: 90%;
-  margin: 0 auto;
-}
-.about p {
-  margin: 0.5em auto 0.5em auto;
-  line-height: 1.4em;
-  letter-spacing: 0.01em;
-}
-.about a {  
-  font-style: italic;
-  letter-spacing: 0.14em;
-}
-@media (min-width: 493px) {
-  .about p {
-    max-width: 25em;
-    line-height: 1.5em;
-    font-size: 1.2em;
-    margin: 1.5em auto 1.5em auto;
-  } 
-}
-@media (min-width: 920px) {
-  .about p {
-    margin: 2.5em auto 2.5em auto;
-    line-height: 1.6em;
-    font-size: 1.2em;
-    max-width: 28em;
-  }
-}
+
 
 
 
