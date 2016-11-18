@@ -1,0 +1,168 @@
+
+
+
+@media (max-width: 319px) { /* no mobile phone has less than 320px */
+  body {
+    border: 1px solid orange;
+  }
+} /* end @media (max-width: 319px) */
+
+
+
+/* Caregiver Testimonials title h1 */
+#h1 {
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+@media (min-width: 400px) {
+  #h1 {
+  	font-size: 1.9em;
+  	line-height: 1.9em;
+  }
+}
+
+
+
+/* MAP FORMATTING */
+.map-space {
+    margin: 1em;
+}
+#map {
+    width: 15em;
+    height: 10em;
+    margin: 0 auto;
+}
+#vmap {
+    width: 100%;
+    height: 100%;
+}
+@media (min-width: 493px) {
+  .map-space {
+    margin: 2em;    
+  }
+  #map {
+	width: 23em;
+	height: 15em;
+  }
+}
+@media (min-width: 700px) {
+  #map {
+  	width: 33em;
+	height: 20em;
+  }
+}
+@media (min-width: 900px) {
+  #map {
+  	width: 42em;
+	height: 25em;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* start "same as in behind-scenes.html"
+*************************************/ 
+/* VIDEO AND TEXT SECTION */
+.videos {
+  /*border: 1px solid red;*/ 
+  width: 90%;
+  margin: 2em auto 3em auto;
+}
+.video-and-text {
+  /*border: 1px solid red;*/ 
+  margin: 1.75em auto;
+}
+.video-itself li {
+  max-width: 30em; 
+  margin: 0 auto;
+}
+.video-description li {
+  max-width: 30em; 
+  margin: 0 auto;
+  margin: 0.5em auto 0em auto;
+}
+.video-description li:first-child {
+	margin: 0.75em auto 0em auto;
+}
+@media (min-width: 1150px) {
+	.video-and-text li {
+		display: inline-block;
+	}
+	.video-description li {
+	    display: block;
+	}
+	.video-description li:first-child {
+		margin: 1.2em auto 0em auto;
+	}
+}
+/* VIDEO p (paragraph) */
+.video-description p {
+  margin: 0.5em auto 0.5em auto;
+  font-size: 1em;
+  line-height: 1.4em;
+  letter-spacing: 0.01em;
+}
+@media (min-width: 1150px) {
+	.video-description p {
+		display: inline-block;
+		margin: 0.5em auto 0.5em 1.5em;
+		font-size: 1em;
+		line-height: 1.4em;
+	}
+}
+/* VIDEO h3 */
+.videos > h3 {
+	margin-top: 4em;
+}
+.videos > h3:first-child {
+	margin-top: 0em;
+}
+.video-description h3 {
+	margin: 0.5em auto;
+}
+.video-description  h3 {
+  font-size: 1em;
+  line-height: 1em;
+}
+@media (min-width: 493px) {
+  .video-description h3 {
+    font-size: 1.15em;
+    line-height: 1.15em;
+  } 
+}
+
+/* end "same as in behind-scenes.html"
+*************************************/ 
+
+
+/* start "same as in press-release.html"
+*************************************/ 
+.video-itself .trailer-frame {
+  min-height: 19em;
+  max-width: 30em;
+  width: 100%; /* originally 95% */
+  margin: 0.5em auto 0em auto;
+}
+@media (min-width: 900px) {
+  .video-itself .trailer-frame {
+    width: 30em;
+  } 
+}
+/* end "same as in press-release.html"
+*************************************/ 
+
+
+@media (min-width: 920px) {
+  .about p {
+    margin: 1.5em auto 1.5em auto;
+    font-size: 1.2em;
+    line-height: 1.5em;    
+    max-width: 25em;
+  } 
+}

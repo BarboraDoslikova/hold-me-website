@@ -117,22 +117,21 @@ h5 { /* "Download with images" */
   margin: 0 auto;
 }
 .intro p {
-  margin: 0.5em auto 0em auto;
+  margin: 0.5em auto 1em auto;
   font-size: 1.2em;
   line-height: 1.4em;
   letter-spacing: 0.01em;
 }
 @media (min-width: 493px) {
   .intro p {
-    max-width: 25em;
+    max-width: 27em;
     line-height: 1.5em;
     font-size: 1.2em;
-    margin: 1em auto 0em auto;
+    margin: 1em auto 2em auto;
   } 
 }
 @media (min-width: 920px) {
   .intro p {
-    margin: 1em auto 0em auto;
     line-height: 1.6em;
   }
 }
