@@ -35,10 +35,26 @@
   <meta itemprop="image" content="http://www.teace.ca/images/logo-original.jpg" />
 
   <!-- STYLE & FONTS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300|Hind:400,300|Cuprum|BenchNine:400,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+  <!-- all pages, all screen sizes -->
+  <link rel="stylesheet" type="text/css" href="css/general.css">
+  
+  <!-- watch.html page, all screen sizes -->
+  <link rel="stylesheet" type="text/css" href="css/watch-page.css"> 
+
+  <!-- all pages, all small devices 
+  <link rel="stylesheet" media="(max-width: 639px)" href="css/general-max-639px.css"> -->
+  
+  <!-- all pages, all large devices 
+  <link rel="stylesheet" media="(min-width: 640px)" href="css/general-min-640px.css"> -->
+
+  <!-- latest jQuery direct from google's CDN -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
   <!-- Google Analytics -->
   <script>
@@ -55,64 +71,167 @@
 </head>
 
 <body>
-  <div class="content-wrap">
+  <div class="content-wrap">    
+
     <div class="title">
-      <h1>Hold Me</h1>      
+      <p>Hold Me</p>      
     </div>
+
+    <ul class="watch-section">
+     
+      <li> <!-- first section -->         
+        <ul class="social-icons">        
+          <li><a class="click-icon" href="https://www.facebook.com/holdmemovie/?ref=hl" target="_blank"><i class="fa fa-facebook-square facebook-icon"></i></a></li>
+          <li><a class="click-icon" href="https://twitter.com/holdmemovie" target="_blank"><i class="fa fa-twitter-square twitter-icon"></i></a></li>
+          <li><a class="IMDb-icon" href="http://www.imdb.com/title/tt4960212/?ref_=fn_al_tt_1" target="_blank"><img src="images/IMDb_icon.png" alt="IMDb icon"></a></li>
+          <li><a class="click-icon" href="https://youtu.be/ftkHTCg1S6U" target="_blank"><i class="fa fa-youtube-square youtube-icon"></i></a></li>
+        </ul>
+      </li>
+
+      <li> <!-- second section -->
+        <ul>
+          <li><iframe class="trailer-frame" src="https://www.youtube.com/embed/ftkHTCg1S6U" frameborder="0" allowfullscreen></iframe></li>
+          <li>
+            <ul class="video-icons">
+              <li><img class="image-icon" src="images/amazon_icon.png" alt="amazon icon"></li> 
+              <li><img class="image-icon" src="images/google_icon.png" alt="google play icon"></li>
+              <li><img class="image-icon" src="images/itunes_icon.png" alt="apple iTunes icon"></li>
+            </ul> <!--end .video-icons -->
+          </li>
+        </ul>
+      </li>     
+
+      <li> <!-- third section -->
+        <ul class="buy-icons"> 
+          <li class="buy-movie-buttons">
+            <ul class="buy-movie-buttons-english">
+              <li><a class="english-button" href="https://holdme.vhx.tv/buy/hold-me">Watch the film</a></li>
+            </ul>
+            <ul>
+              <li><a href="https://holdme.vhx.tv/buy/hold-me-serrez-moi-francais">Fran&#231;ais</a></li>
+              <li><a href="https://holdme.vhx.tv/buy/hold-me-abrazame-espanol">Espa&#241;ol</a></li>
+              <li><a href="https://holdme.vhx.tv/buy/hold-me-halt-mich-deutsche">Deutsche</a></li>
+              <li><a href="https://holdme.vhx.tv/buy/hold-me-bao-kisimete-ri-ben-yu">日本語</a></li>
+              <li><a href="coming-soon.html#coming-soon">Nederlands</a></li>
+            </ul>
+          </li> <!-- end .buy-movie-buttons -->          
+        </ul> 
+
+      </li> <!-- end third section -->
+    </ul> <!-- end .watch-section --> 
+
+    <ul class="watch-bottom">      
+      <li class="laurels">     
+        <img class="laurel-image" src="images/laurels-MWFF.png" alt="Hold Me the movie laurels from the Montreal World Film Festival">
+        <img class="laurel-image" src="images/laurels-RIFF.png" alt="Hold Me the movie laurels from the Rome International Film Festival">
+      </li>
+
+      <li class="buy-soundtrack-buttons">
+        <ul>
+          <li><img class="soundtrack-image" src="images/hold-me-soundtrack-front.jpg" alt="hold me soundtrack front"></li>
+          <li><a href="coming-soon.html#coming-soon">Buy Soundtrack</a></li>
+        </ul>
+      </li> <!-- end .buy-soundtrack-buttons -->      
+    </ul> 
     
-    <div class="nav">
+    
+
+    <div class="quotes">      
+    </div>
+
+  </div> <!-- end .content-wrap -->
+
+
+
+  <div class="content-wrap">
+
+    <div class="page-menu">
       <ul>
-        <li><a href="#trailer">Trailer</a></li>
-        <li><a href="#poster">Poster</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="pressrelease.html">Press Release</a></li>  
-        <li><a href="http://www.imdb.com/title/tt4960212/?ref_=fn_al_tt_1" target="_blank"><img class="IMDb-icon" src="images/IMDb_icon.png" alt="IMDb icon"></a></li>        
-        <li><a href="https://www.facebook.com/holdmemovie/?ref=hl" target="_blank"><i class="fa fa-facebook-square facebook-icon"></i></a></li>
-        <li><a href="https://twitter.com/holdmemovie" target="_blank"><i class="fa fa-twitter-square twitter-icon"></i></a></li>
+        <li><a href="testimonials.html">CAREGIVER TESTIMONIALS</a></li>
+        <li><a href="press-release.html">PRESS RELEASE</a></li>
+        <li><a href="behind-scenes.html">BEHIND THE SCENES</a></li>
+        <li><a href="cast.html">CAST</a></li>
       </ul>
+    </div>
+
+  </div> <!-- end .content-wrap -->
+
+
+
+  <div class="content-wrap">
+
+    <div class="about">     
+      <p>Hold Me is the story of Hannah, a woman whose job it is to hold and console people who are being voluntarily euthanized.</p>
     </div>
 
     <div class="about">     
-      <p>Hold Me is the story of Hannah, a woman whose job it is to hold and console people who are being voluntarily euthanized</p>
+      <p>Starring <a href="http://www.imdb.com/name/nm2689823/">Hannah Fierman</a> and <a href="http://www.imdb.com/name/nm0448592/">Laura Kenny</a> as mother and daughter, the film challenges us to glimpse the final moments of life in the context of a loving goodbye&#8211;to consider the struggles and sacrifices of those who work in palliative care&#8211;and to find the courage to talk about it.</p>
     </div>
 
-    <div id="trailer" class="trailer">
-      <iframe class="trailer-frame" src="https://www.youtube.com/embed/ftkHTCg1S6U" frameborder="0" allowfullscreen></iframe>
-    </div>
+  </div> <!-- end .content-wrap -->    
 
-    <div class="laurels">     
-      <img class="laurel-image" src="images/laurels-MWFF.png" alt="Hold Me the movie laurels from the Montreal World Film Festival">
-      <img class="laurel-image" src="images/laurels-RIFF.png" alt="Hold Me the movie laurels from the Rome International Film Festival">
-    </div>
 
-    <div class="premiere">     
-      <h2>&#8211; Canadian PREMIERE November 20<sup>th</sup> 2016 &#8211;</h2>
-      <p><b>November 20<sup>th</sup></b> Sunday, 6:30PM, <a href="http://www.metrocinema.org/">Garneau Theatre</a>, 8712 109 ST NW, Edmonton, AB, Canada, T6G 1E9</p>
-    </div> 
 
-    <div class="coming">
-      <h2>&#8211; ONLINE RELEASE November 20<sup>th</sup> 2016 &#8211;</h2>
-    </div>
+  <div id="poster" class="poster">
+    <img class="poster-image" src="images/hold-me-poster.jpg" alt="Hold Me the movie poster">
+  </div>
 
-    <div id="about"class="about">     
-      <p>Filmed in Edmonton, Alberta, Canada and New York, NY, Hold Me is <a href="http://www.imdb.com/name/nm4061744/">Teace Snyder</a> and <a href="http://www.imdb.com/name/nm3822837/">Aksel Stasny's</a> first feature film together. Starring <a href="http://www.imdb.com/name/nm2689823/">Hannah Fierman</a> and <a href="http://www.imdb.com/name/nm0448592/">Laura Kenny</a> as mother and daughter, the film challenges us to glimpse the final moments of life in the context of a loving goodbye&#8211;to consider the struggles and sacrifices of those who work in palliative care&#8211;and to find the courage to talk about it.</p>
-    </div>    
 
-    <div id="poster" class="poster">
-      <img class="poster-image" src="images/hold-me-poster.jpg" alt="Hold Me the movie poster">
-    </div>
+
+  <div class="content-wrap">
 
     <div class="footer">
-      <ul class="footer-nav">
-        <li><a class="cliche" href="http://teace.ca/">Original Clich&#233;</a></li>
-        <li><a href="http://teace.ca/"><img class="left" src="images/originalcliche.png" alt="original cliche icon"></a></li>
-        <li><a href="http://www.akselstasny.com/"><img class="right" src="images/photofilm.jpg" alt="photo film icon"></a></li>
-      </ul>
-    </div>
 
+      <div class="social-media-icons">
+        <ul>        
+          <li><a class="click-icon" href="https://www.facebook.com/holdmemovie/?ref=hl" target="_blank"><i class="fa fa-facebook-square facebook-icon"></i></a></li>
+          <li><a class="click-icon" href="https://twitter.com/holdmemovie" target="_blank"><i class="fa fa-twitter-square twitter-icon"></i></a></li>
+          <li><a class="IMDb-icon" href="http://www.imdb.com/title/tt4960212/?ref_=fn_al_tt_1" target="_blank"><img src="images/IMDb_icon.png" alt="IMDb icon"></a></li>
+          <li><a class="click-icon" href="https://youtu.be/ftkHTCg1S6U" target="_blank"><i class="fa fa-youtube-square youtube-icon"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-menu">
+        <ul>        
+          <li><a class="left" href="index.html">HOME</a></li>
+          <li><a class="left" href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <p class="bigger">© 2016. <strong>Original Clich&#233 Entertainment Inc.</strong></li>
+      <p>Website by <a href="http://www.barboradoslikova.com/">Barbora Doslikova.<p>
+  
+    </div> <!-- end .footer -->  
+
+  </div> <!-- end .content-wrap -->  
+
+  <!-- STICKY GO TO THE TOP BUTTON -->
+  <a href="#" class="go-top"> 
+    <i class="fa fa-arrow-circle-up"></i>
+  </a>
+
+  <script> 
+    $(document).ready(function() {
+      // Show or hide the sticky footer button
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+          $('.go-top').fadeIn(200);
+        } else {
+          $('.go-top').fadeOut(200);
+        }
+      });
+      
+      // Animate the scroll to top
+      $('.go-top').click(function(event) {
+        event.preventDefault();
+        
+        $('html, body').animate({scrollTop: 0}, 300);
+      })
+    });
+  </script> 
     
-    
-    
-  </div>
+  <!-- vhx.tv checkout embed script -->
+  <script src="https://cdn.vhx.tv/assets/api.js"></script>
+
 </body>
 </html>

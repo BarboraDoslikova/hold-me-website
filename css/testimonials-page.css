@@ -1,11 +1,6 @@
 
 
 
-@media (max-width: 319px) { /* no mobile phone has less than 320px */
-  body {
-    border: 1px solid orange;
-  }
-} /* end @media (max-width: 319px) */
 
 
 
