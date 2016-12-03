@@ -73,6 +73,10 @@
   /*border: 1px solid red;*/ 
   margin: 1.75em auto;
 }
+.video-itself {
+}
+.video-description {
+}
 .video-itself li {
   max-width: 30em; 
   margin: 0 auto;
@@ -104,7 +108,7 @@
   letter-spacing: 0.01em;
 }
 @media (min-width: 1150px) {
-	.video-description p {
+  .video-description p {
 		display: inline-block;
 		margin: 0.5em auto 0.5em 1.5em;
 		font-size: 1em;
@@ -121,14 +125,15 @@
 .video-description h3 {
 	margin: 0.5em auto;
 }
-.video-description  h3 {
+.video-description h3 {
   font-size: 1em;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 @media (min-width: 493px) {
   .video-description h3 {
     font-size: 1.15em;
-    line-height: 1.15em;
+    line-height: 1.3em;
+
   } 
 }
 
