@@ -1,8 +1,37 @@
 
 
+/* INSTRUCTIONS paragraph */
+.widget-image { 
+  max-height: 1.5em;
+}
+.widget-number { 
+  max-height: 1.5em;
+}
 
 
+/* SPEAKPIPE */
+.speakpipe {
+  margin: 0 auto 3em auto;
+  max-width: 35em;
+  border: 0px solid red;
+}
 
+/* HOLD-ME-BANNER image button */
+.banner-button {
+  max-width: 10em;
+  opacity: 1.0; 
+}
+.banner-button img:hover {
+  opacity: 0.7; 
+}
+
+
+.media-room p { /* taken in the same form from press-release-page.css */
+  text-align: left;
+}
+
+/* start "same as in testimonials.html"
+*************************************/ 
 
 /* Caregiver Testimonials title h1 */
 #h1 {
@@ -15,6 +44,9 @@
   	line-height: 1.9em;
   }
 }
+
+
+
 
 
 
@@ -36,20 +68,20 @@
     margin: 2em;    
   }
   #map {
-	width: 23em;
-	height: 15em;
+	  width: 23em;
+	  height: 15em;
   }
 }
 @media (min-width: 700px) {
   #map {
-  	width: 33em;
-	height: 20em;
+    width: 33em;
+	  height: 20em;
   }
 }
 @media (min-width: 900px) {
   #map {
-  	width: 42em;
-	height: 25em;
+    width: 42em;
+	  height: 25em;
   }
 }
 
@@ -166,3 +198,9 @@
     max-width: 25em;
   } 
 }
+
+
+
+
+/* end "same as in testimonials.html"
+*************************************/ 
