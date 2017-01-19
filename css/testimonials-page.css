@@ -9,12 +9,21 @@
 }
 
 
+
+
 /* SPEAKPIPE */
 .speakpipe {
-  margin: 0 auto 3em auto;
-  max-width: 35em;
-  border: 0px solid red;
+  margin: 0 auto 1em auto;
+  max-width: 30em;
+  
 }
+
+
+
+
+
+
+
 
 /* HOLD-ME-BANNER image button */
 .banner-button {
@@ -44,10 +53,6 @@
   	line-height: 1.9em;
   }
 }
-
-
-
-
 
 
 /* MAP FORMATTING */
@@ -190,7 +195,8 @@
 *************************************/ 
 
 
-@media (min-width: 920px) {
+
+@media (min-width: 920px) { /* making this smaller compared to general.css */
   .about p {
     margin: 1.5em auto 1.5em auto;
     font-size: 1.2em;
@@ -199,8 +205,53 @@
   } 
 }
 
-
-
-
 /* end "same as in testimonials.html"
 *************************************/ 
+
+
+
+.about .para-title { 
+  font-size: 1.2em; /* 1em in .about p in general.css */
+}
+@media (min-width: 493px) { 
+  .about .para-title {
+    margin: 1em auto 1em auto; /* 1.5em auto 1.5em auto in general.css */
+    font-size: 1.5em; /* 1.2em in general.css */
+    line-height: 1.5em;    
+    max-width: 20em; /* 25em in general.css */
+  } 
+}
+
+.small-gaps p {
+  margin: 0.3em auto 0.3em auto;
+  line-height: 1.5em; 
+}
+.small-gaps p:first-child {
+  margin: 1.3em auto 0.3em auto;
+}
+
+
+
+.content-wrap-middle { 
+  margin: 5%;  
+  padding: 3em 0 1em 0;
+  /*background: rgba(24, 14, 12, 0.7);  #180E0C more brown */
+  background: rgba(45,27, 22, 0.65);
+  border: 0px solid #171819;
+}
+.content-wrap-inner { 
+  margin: 5%;
+  padding: 1em 0 3em 0;
+  background: rgba(45,27, 22, 1);  /* #2D1B16 */
+  border: 0px solid #171819;
+}
+@media (min-width: 920px) { 
+  .content-wrap-middle {
+    margin: 5% auto 5% auto;  
+    max-width: 75%;
+  } 
+  .content-wrap-inner {
+    margin: 5% auto 5% auto;  
+    max-width: 75%;
+  }
+}

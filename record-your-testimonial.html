@@ -48,78 +48,14 @@
   <link rel="stylesheet" type="text/css" href="css/general.css">
 
   <!-- watch.html page, all screen sizes -->
-  <link rel="stylesheet" href="css/watch-page.css">  <!-- for poster -->
-  <link rel="stylesheet" href="css/testimonials-page.css"> 
   <link rel="stylesheet" href="css/contact-page.css"> 
+  <link rel="stylesheet" href="css/record-your-testimonial-page.css"> 
 
-  <!-- all pages, all small devices 
-  <link rel="stylesheet" media="(max-width: 639px)" href="css/general-max-639px.css"> -->
-  
-  <!-- all pages, all large devices 
-  <link rel="stylesheet" media="(min-width: 640px)" href="css/general-min-640px.css"> -->
 
 
   <!-- latest jQuery direct from google's CDN -->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     
-
-
-    <!-- jQuery for the msp on this page -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/dist/jquery.vmap.js"></script>
-    <script type="text/javascript" src="js/dist/maps/jquery.vmap.world.js" charset="utf-8"></script>
-
-    <!-- jQuery for the msp on this page -->
-    <script type="text/javascript">
-      var map;
-
-      map = jQuery(document).ready(function () {
-
-        // Store currentRegion
-        var currentRegion = 'nz';
-        // List of Regions we'll let clicks through for
-        var enabledRegions = ['ca', 'us', 'au'];
-        
-        jQuery('#vmap').vectorMap({
-          map: 'world_en',
-          backgroundColor: '#282220', // ocean
-          color: '#C7AEA9', // disabled countries
-          showTooltip: true,
-          enableZoom: true,
-          showTooltip: true,
-          selectedColor: '#723A27', // selected country
-          // selectedRegions: ['ca'],  the default selected country on page load
-          hoverColor: null,
-          colors: {
-            ca: '#AD7967', // enabled country, unselected
-            //us: '#AD7967',
-            //au: '#AD7967',
-          },
-
-          onRegionClick: function(event, code, region){
-            // Check if this is an Enabled Region, and not the current selected on
-            if(enabledRegions.indexOf(code) === -1 || currentRegion === code){
-              // Not an Enabled Region
-              event.preventDefault();
-            } else {
-              // Enabled Region. Update Newly Selected Region.
-              currentRegion = code;
-              var message = code.toUpperCase(); // "CANADA" (string)
-              var element = document.getElementById(message);
-              element.scrollIntoView({block: "end", behavior: "smooth"});
-            }
-          },
-          onRegionSelect: function(event, code, region){
-            console.log(map.selectedRegions);
-          },
-          onLabelShow: function(event, label, code){
-            if(enabledRegions.indexOf(code) === -1){
-              event.preventDefault();
-            }
-          }
-        });
-      });
-    </script>
 
   <!-- Google Analytics -->
   <script>
@@ -142,8 +78,10 @@
 
     <h1>Leave Your Testimonial</h1>
 
+    <h2>Our Goal</h2>
+
     <div class="media-room about">
-      <p>The Caregiver Outreach campaign associated with the feature film Hold Me is intended to bring together a variety of testimonials from caregivers all over the world. These testimonials will pass along the wisdom and experiences of those who work closely with the dying so that the general public can have a better understanding of acting as caregivers themselves.</p>
+      <p>The Caregiver Outreach campaign associated with the feature film Hold Me is intended to bring together a variety of testimonials from caregivers all over the world. These testimonials will pass along the wisdom and experiences of those who work closely with the dying.</p>
     </div>
 
     <div id="poster" class="poster">
@@ -166,60 +104,78 @@
     </div>
 
 
-    <h1>Questions</h1>
-
-    <div class="media-room about">
-      <p>1. What is a valuable story or account you can share about someone you have accompanied?</p>
-      <p>2. In the film Hold Me, Hannah struggles with talking about her grief. What advice would you offer people struggling with expressing or coping with their feelings?</p>
-      <p>3. How do you manage the emotional toll that working with the dying can bring?</p>
-      <p>4. What do you feel people want from a caregiver at the end of life?</p>
-      <p>5. What has working with the dying taught you about life?</p>
-    </div>
 
 
-    <h1>Instructions</h1>
+    <div class="content-wrap-middle">
 
-    <div class="media-room about">
-      <p>Thank you for taking the time to record your testimonial. Here is how to do it:</p>
+      <h2>How to record your testimonial</h2>
 
-      <p>We recomend every answer is about 2 minutes in length.</p>
-      <p>You should precede answering these questions by stating your name (if comfortable identifying yourself) and what it is you do/how you work closely with the dying (not where specifically you work, simply your general area of expertise).</p>
-      <p>Hence, the recording might be approximately 10 minutes long.</p>
-
-      <p><img class="widget-image" src="images/number-0.png" alt="0"> Press <img class="widget-image" src="images/start-recording.png" alt="start recording"> and replay your message so you know your microphone is working properly.</p>
-      <p><img class="widget-image" src="images/number-1.png" alt="1"> Record your message. Press <img class="widget-image" src="images/start-recording.png" alt="start recording"> and then <img class="widget-image" src="images/stop.png" alt="stop">.</p>
-      <p><img class="widget-image" src="images/number-2.png" alt="2"> You can press <img class="widget-image" src="images/replay.png" alt="replay"> to listen to your message as many times as you like and repeat steps 1 and 2 until you are happy.</p>
-      <p><img class="widget-image" src="images/number-3.png" alt="3"> Fill in your contact details is optional but recommended so we can contact you. Then press <img class="widget-image" src="images/send.png" alt="send"> and your message will be delivered to our inbox.</p>
-    </div>
-
-
-    <h1>Record</h1>
-
-    <div class="speakpipe">
-      <iframe src="https://www.speakpipe.com/widget/inline/ltk99ed4uircjboqm34m95v6h2c2b2bj" frameborder="0" width="100%" height="180px"></iframe>
-    </div>
-
-    <div class="media-room about">
-      <p>Thank you for taking the time to record your testimonial.</p>
-      <p>Please turn to as with any questions at:</p>  
-    </div>
-
-    <div class="contact-details">        
+      <div class="media-room about">
+        <p>We recomend every answer is about 2 minutes in length.</p>
         
-      <ul class="contact-person">
-        <li>
-          <img class="profile-image" src="images/Barbora-Doslikova.jpg" alt="photo of Barbora Doslikova">
-        </li>
-        <li>
-          <ul class="right">
-            <li><p>Barbora Doslikova</p></li>
-            <li><p class="occupation"><em>Social Media Coordinator/Outreach Manager</em></p></li>
-            <li><p><img class="email-image" src="images/barbora.png" alt="email"></p></li>
-          </ul>
-        </li>
-      </ul> <!-- end .contact-person -->
+        <p><img class="widget-image" src="images/number-0.png" alt="0"> Press <img class="widget-image" src="images/start-recording.png" alt="start recording"> and replay your message so you know your microphone is working properly.</p>
+        <p><img class="widget-image" src="images/number-1.png" alt="1"> Record your message. Press <img class="widget-image" src="images/start-recording.png" alt="start recording"> and then <img class="widget-image" src="images/stop.png" alt="stop">.</p>
+        <p><img class="widget-image" src="images/number-2.png" alt="2"> You can press <img class="widget-image" src="images/replay.png" alt="replay"> to listen to your message as many times as you like and repeat steps 1 and 2 until you are happy.</p>
+        <p><img class="widget-image" src="images/number-3.png" alt="3"> Fill in your contact details is optional but recommended so we can contact you. Then press <img class="widget-image" src="images/send.png" alt="send"> and your message will be delivered to our inbox.</p>
+      </div>
 
-    </div> <!-- end .contact-details -->
+      
+
+
+      <div class="content-wrap-inner">
+
+      <div class="media-room about">
+        <p class="para-title">Record</p>   
+
+        <div class="speakpipe">
+          <iframe src="https://www.speakpipe.com/widget/inline/ltk99ed4uircjboqm34m95v6h2c2b2bj" frameborder="0" width="100%" height="180px"></iframe>
+        </div>
+      </div>
+
+      <div class="media-room about small-gaps">
+        <p>Please begin recording by stating:</p>
+        <p>Your first name (if you wish).</p>
+        <p>Your occupation working closely with the dying.</p>
+        <p>The country in which this work was done.</p>
+      </div>
+      <div class="media-room about small-gaps">
+        <p>Questions:</p>
+        <p>1. What is a valuable story or account you can share about someone you have accompanied?</p>
+        <p>2. In the film Hold Me, Hannah struggles with talking about her grief. What advice would you offer people struggling with expressing or coping with their feelings?</p>
+        <p>3. How do you manage the emotional toll that working with the dying can bring?</p>
+        <p>4. What do you feel people want from a caregiver at the end of life?</p>
+        <p>5. What has working with the dying taught you about life?</p>
+      </div>
+      <div class="media-room about small-gaps">
+        <p>Thank you for taking the time to record your testimonial.</p>
+      </div>
+
+      </div> <!-- end .content-wrap-inner -->
+
+
+      <div class="media-room about">  
+        <p>Please turn to as with any questions at:</p>  
+      </div>
+
+      <div class="contact-details">        
+          
+        <ul class="contact-person">
+          <li>
+            <img class="profile-image" src="images/Barbora-Doslikova.jpg" alt="photo of Barbora Doslikova">
+          </li>
+          <li>
+            <ul class="right">
+              <li><p>Barbora Doslikova</p></li>
+              <li><p class="occupation"><em>Social Media Coordinator/Outreach Manager</em></p></li>
+              <li><p><img class="email-image" src="images/barbora.png" alt="email"></p></li>
+            </ul>
+          </li>
+        </ul> <!-- end .contact-person -->
+
+      </div> <!-- end .contact-details -->
+
+
+    </div> <!-- end .content-wrap-middle -->
 
 
   </div> <!-- end .content-wrap -->

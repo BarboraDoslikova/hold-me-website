@@ -49,10 +49,12 @@ body {
 /* ALL TITLES */
 h1 { /* "Hold Me" title in press-release; page titles */
   font-size: 1.9em;
+  line-height: 1.9em;
   margin-top: 1em;
 }
 h2 { /* "Press Release" title */
-  font-size: 1.3em;
+  font-size: 1.5em;
+  line-height: 1.5em;
   margin-top: 0.25em;
 }
 
@@ -79,6 +81,7 @@ h5 { /* "Download with images" */
   margin-top: 0.25em;
   margin-bottom: 2em;
 }
+
 
 /* ALL p (paragraphs) */
 /* in div .about and not in div .footer */
@@ -111,6 +114,8 @@ h5 { /* "Download with images" */
     max-width: 28em;
   }
 }
+
+
 .about .coming-soon {  /* COMING SOON h2 title */
   font-size: 1.2em;
   letter-spacing: 0.25em;
@@ -142,10 +147,10 @@ h5 { /* "Download with images" */
 }
 @media (min-width: 493px) {
   .intro p {
+    margin: 1em auto 2em auto;
     max-width: 27em;
     line-height: 1.5em;
-    font-size: 1.2em;
-    margin: 1em auto 2em auto;
+    font-size: 1.2em;    
   } 
 }
 @media (min-width: 920px) {
