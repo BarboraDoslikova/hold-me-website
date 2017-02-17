@@ -208,7 +208,7 @@ a:hover {
 /* OTHER GENERAL */
 body { /* picture background */
 	background: url("../images/hold-me-poster-clean.jpg") no-repeat fixed;
-    background-size: cover;
+  background-size: cover;
 }
 .content-wrap { /* grey background */
 	margin: 5%;
@@ -476,6 +476,10 @@ input[type=checkbox]:checked ~ #menu{
 .video-icons li {
   display: inline-block;
   line-height: 1.4em;
+  opacity: 1.0;
+}
+.video-icons li:hover { /* over-ride over general.css */
+  opacity: 0.7;
 }
 .image-icon {
   height: 1.65em;
