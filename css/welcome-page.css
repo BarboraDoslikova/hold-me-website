@@ -22,11 +22,16 @@
     float: none;  /* over ride .header .title from general .css */
   }
 }
-
 /* OTHER GENERAL */
 body { /* picture background */
   background: url("../images/ad_background.jpg") no-repeat fixed;
   background-size: cover;
+}
+.videos {
+  margin: 0 auto;
+}
+.video-and-text {
+  margin: 0;
 }
 h2 {
   margin-top: 1.5em;
@@ -46,9 +51,6 @@ h2 {
 .watch a:hover {
   color: white;
 }
-
-
-
 /* TWO MAIN SECTIONS */
 .video-description li {
   border-radius: 0.85em; /* 15px */ 
@@ -66,8 +68,6 @@ h2 {
   margin-bottom: 1.1em;
   padding: 1em;
 }
-
-
 .watch img {
   margin-left: 0.6em;
 }
@@ -78,7 +78,6 @@ h2 {
 .video-description-dense li {
   margin-top: -0.5em;
 }
-
 @media (min-width: 960px) {
   .video-and-text li {
     display: inline-block;
@@ -100,8 +99,6 @@ h2 {
     margin-top: 6em;
   }
 }
-
-
 .video-description li p {
   font-size: 1.25em;
   line-height: 1.25em;
@@ -110,7 +107,6 @@ h2 {
   font-size: 1.35em;
   line-height: 1.35em;
 }
-
 h3 {
 	min-width: 10em;
 }
@@ -127,7 +123,6 @@ h3 {
   font-size: 0.5em;
   line-height: 0.5em;
 }
-
 /* BOTTOM TWO LINES */
 .about p {
   font-size: 0.8em;
