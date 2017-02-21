@@ -1,0 +1,107 @@
+/* CONTACT PAGE OVERRIDE FROM other pages' .css's
+**************************************************************************/
+/* OTHER GENERAL */
+body { /* picture background */
+  background: url("../images/ad_background.jpg") no-repeat fixed;
+  background-size: cover;
+}
+h2 {
+  margin-top: 1.5em;
+}
+/* WATCH COLOURS */
+.watch {
+  background-color: #785996;
+  border: solid 5px #785996;  
+}
+.watch:hover {
+  background-color: #ab8cc9;
+  border: solid 5px #ab8cc9;
+}
+.watch a {
+  color: white;
+}
+.watch a:hover {
+  color: white;
+}
+
+
+
+/* TWO MAIN SECTIONS */
+.video-description li {
+  border-radius: 0.85em; /* 15px */ 
+  padding: 0.5em 1.3em; /* 10px 25px */
+  max-width: 20em;
+}
+/* WATCH  */
+.watch {
+  padding: 0em;
+  font-size: 1.15em;
+}
+#watch-special {
+  margin-top: -0.6em;
+  margin-bottom: 1.1em;
+  padding: 1em;
+}
+
+
+.watch img {
+  margin-left: 0.6em;
+}
+/* RIGHT MIDDLE SECTION */
+.video-description-dense {
+  margin-top: 3em;
+}
+.video-description-dense li {
+  margin-top: -0.5em;
+}
+
+@media (min-width: 960px) {
+  .video-and-text li {
+    display: inline-block;
+  }
+  .video-description li {
+      display: block;
+  }
+  .video-description li:first-child {
+    margin: 1.2em auto 0em auto;
+  }
+  .watch {
+    font-size: 1.5em;
+  }
+  #watch-special {
+    margin-top: -0.5em;
+  }
+  .video-description-dense {
+    margin-top: 6em;
+  }
+}
+
+
+.video-description li p {
+  font-size: 1.25em;
+}
+.video-description li h3 {
+  font-size: 1.35em;
+}
+
+.imdb-icon {
+  height: 1.25em;
+}
+.star-icon {
+  height: 1.1em;
+}
+.laurel-image {
+  width: 60%;
+}
+.small-font {
+  font-size: 0.5em;
+}
+
+/* BOTTOM TWO LINES */
+.about p {
+  font-size: 0.8em;
+  margin-bottom: 2em;
+}
+.about p:first-child {
+  font-size: 1em;
+}
