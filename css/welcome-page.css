@@ -36,9 +36,10 @@ h2 {
 .watch {
   padding: 0em;
   font-size: 1.15em;
+  line-height: 1.15em;
 }
 #watch-special {
-  margin-top: -0.6em;
+  margin-top: -0.4em;
   margin-bottom: 1.1em;
   padding: 1em;
 }
@@ -67,9 +68,10 @@ h2 {
   }
   .watch {
     font-size: 1.5em;
+    line-height: 2em;
   }
   #watch-special {
-    margin-top: -0.5em;
+    margin-top: -0.3em;
   }
   .video-description-dense {
     margin-top: 6em;
@@ -79,11 +81,16 @@ h2 {
 
 .video-description li p {
   font-size: 1.25em;
+  line-height: 1.25em;
 }
 .video-description li h3 {
   font-size: 1.35em;
+  line-height: 1.35em;
 }
 
+h3 {
+	min-width: 10em;
+}
 .imdb-icon {
   height: 1.25em;
 }
@@ -95,13 +102,16 @@ h2 {
 }
 .small-font {
   font-size: 0.5em;
+  line-height: 0.5em;
 }
 
 /* BOTTOM TWO LINES */
 .about p {
   font-size: 0.8em;
+  line-height: 0.8em;
   margin-bottom: 2em;
 }
 .about p:first-child {
   font-size: 1em;
+  line-height: 1em;
 }
