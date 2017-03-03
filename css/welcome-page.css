@@ -133,3 +133,10 @@ h3 {
   font-size: 1em;
   line-height: 1em;
 }
+
+.about p:first-child a {
+  color: #785996;
+}
+.about p:first-child a:hover {
+  color: #ab8cc9; 
+}
