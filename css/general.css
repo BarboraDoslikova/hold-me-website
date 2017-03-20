@@ -7,6 +7,7 @@
   /* FONTS
   /* ALL LINKS
   /* OTHER GENERAL
+  /* MAIL CHIMP
   /* FOOTER
 /*** SOME PAGES, ALL SCREEN SIZES
   /* HEADER + MENU (5x: testimonials.html, press-release.html, behind-the-scenes.html, cast.html, contact.html)
@@ -223,53 +224,62 @@ body { /* picture background */
 }
 
 
+/* MAIL CHIMP */
+#mc_embed_signup {
+  clear: left;
+  font-family: KozGoPro-ExtraLight, sans-serif;
+  font-size: 0.8em;
+  line-height: 2em;
+  color: #DBC9BF; /* #DBC9BF pinkish */
+  width: 90%;
+  margin: 0 auto;
+}
+
+
 /* FOOTER */
 .footer {
-	line-height: 1em;
-	letter-spacing: 0.055em;
+  line-height: 1em;
+  letter-spacing: 0.055em;
 }
 .social-media-icons {
-	margin-top: 1em;
-	font-size: 2em;
+  margin-top: 1em;
+  font-size: 2em;
 }
-.social-media-icons li {	
-    display: inline-block; 
-    margin: auto 0.05em auto 0.05em;
+.social-media-icons li {  
+  display: inline-block; 
+  margin: auto 0.05em auto 0.05em;
 }
 .footer-menu li {
-    display: inline-block; 
-    margin: 1em auto 1em auto;
-    font-size: 1.2em;
-    letter-spacing: 0.05em;
-}
-.footer-menu li:first-child {
-	margin-right: 1.75em;
+  display: inline-block; 
+  margin: 1em 1.6em; 
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
 }
 .footer p {
   margin-top: 0.8em;
   font-size: 0.4em;
 }
 .footer .bigger {
-	margin-top: 1em;
-	font-size: 0.65em;
+  margin-top: 1em;
+  font-size: 0.65em;
 }
 @media (min-width: 400px) {
-	.social-media-icons li {
-   		margin: auto 0.38em auto 0.38em;
-	}
-	.footer-menu li { 
-	    margin: 2em 2.44em 1em 2.44em;
-	    font-size: 1.3em;
-	}
-	.footer .bigger {
-		font-size: 0.75em;
-	}
-	.footer p {
-	  margin-top: 1.3em;
-	}
-	.footer {
-		margin: 1.5em auto 1.5em auto;
-	}
+  .social-media-icons li {
+    margin: auto 0.38em auto 0.38em;
+  }
+  .footer-menu li { 
+    margin-top: 1.8em; /*here*/
+    font-size: 1.3em;
+  }
+  .footer .bigger {
+    font-size: 0.7em;
+  }
+  .footer p {
+    margin-top: 1.3em;
+  }
+  .footer {
+    margin: 1.5em auto 1.5em auto;
+  }
 }
 
 /*** SOME PAGES, ALL SCREEN SIZES
@@ -300,7 +310,7 @@ body { /* picture background */
   margin: 0.15em auto 0.15em auto;
 }
 /* HEADER  video icons */
-.header .video-icons { /* over-ride over general.css */
+.header .icons { /* over-ride over general.css */
   margin-top: 0em;
 }
 .header .video-icons li { /* over-ride over general.css */
