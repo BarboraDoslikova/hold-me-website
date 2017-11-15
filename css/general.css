@@ -1,36 +1,105 @@
 /* TABLE OF CONTENTS
 **************************************************************************/
 /*** ALL PAGES, ALL SCREEN SIZES
-(watch.html, testimonials.html, press-release.html, behind-the-scenes.html, cast.html, contact.html)
+
+/*** GENERAL
   /* Apply a natural box layout model to all elements
   /* Fix the clearing of floats on child elements
   /* FONTS
   /* ALL TITLES
-  /* ALL p (paragraphs)
-  /* ALL LINKS
-  /* OTHER GENERAL
-  /* MAIL CHIMP
-  /* FOOTER
-/*** SOME PAGES, ALL SCREEN SIZES
-  /* HEADER + MENU (5x: testimonials.html, press-release.html, behind-the-scenes.html, cast.html, contact.html)
-  /* PAGE MENU
-  /* IMDB ICON 
-  /* VIDEO-ICONS
-  /* POSTER
-  /* Go-To-The-Top Button
-/*** PAGE-SPECIFIC, ALL SCREEN SIZES
-  /* CAST.html
-  /* CAST.html & PRESS-RELEASE.html
-  /* PRESS-RELEASE.html
-  /* WATCH/INDEX.html
-  /* BEHIND-SCENES.html
+  /* OTHER GENERAL .content-wrap, .section-title
+  /* COLOURS
+  /* LINK COLOURS
+
+/* HEADER + MENU 
+  /* .header-div
+    /* .header
+      /* .title
+        /* .smaller-font
+      /* .second
+        /* .watch-bundle
+          /* .watch
+            /* .button
+      /* .third
+        /* .show-menu
+          /* .fa fa-bars
+        /* .menu
+
+/* LANDING PICTURE BACKGROUNDS 
+  /* .landing-div
+    /* .landing-image
+
+/* PICTURE BACKGROUNDS
+  /* .picture-1-div
+    /* .picture-1-image
+
+/* FULL FILM 
+    /* .full-film
+      /* .watch-film-p
+      /* .buy-icons
+        /* .buy-movie-buttons
+      /* .donate-p
+      /* .donate-buttons
+          /* .button
+            /* .paypal-image
+            /* .paypal-text
+ 
+/* TRAILER + REVIEWS, OUTTAKES, PANEL
+  /*.trailer
+    /* .videos
+      /* .videos-and-text
+        /* .video-itself
+          /* .trailer-frame
+        /* .video-description
+    /* .section-title
+    /* .reviews
+      /* .in-line
+        /* reviews-image
+        /* star-icon
+          /* small-font
+
+/* MOVIE CLIPS
+    /* .movie-clips
+
+/* SOUNDRTRACK
+    /* .soundtrack
+      /* .soundtrack-image
+      /* .buy-soundtrack-buttons
+        /* .short-link
+
+/* INTERVIEW WITH TEACE
+    /* .interview
+      /* .interview-image
+
+/* POSTER
+    /* .poster
+      /* .poster-image
+
+/* PRESS KIT
+    /* .press-kit
+      /* .short-p
+        /* .fa fa-download
+
+/* FOOTER
+  /* .footer-div
+    /* .footer
+      /* .social-media-icons
+        /* .click-icon
+          /* .fa fa-xxx
+      /* .bigger
+
+/* STICKY GO TO THE TOP BUTTON
+  /* .go-top
+    /* .fa fa-arrow-circle-up
+
+/* MAIL CHIMP
+
 /* END TABLE OF CONTENTS
 **************************************************************************/
 
 
 
-/*** ALL PAGES, ALL SCREEN SIZES
-**************************************************************************/
+
 
 /* Apply a natural box layout model to all elements */
 *, *:before, *:after {
@@ -51,25 +120,17 @@
 }
 body {
 	font-family: KozGoPro-ExtraLight;
-	color: #DBC9BF; /* pinkish */
 	text-align: center;
 }
 
 
 /* ALL TITLES */
-h1 { /* "Hold Me" title in press-release; page content titles */
-     /* "Leave Your Testimonial" title in rec-your-test.html */
+h1 {
   font-size: 1.9em;
   line-height: 1.9em;
-  margin-top: 1em; 
+  margin-top: 1em;
 }
-h2 { /* "Feature Film Press Release" title */
-     /* "Our Goal" title in rec-your-test.html */
-  font-size: 1.5em;
-  line-height: 1.5em;
-  margin-top: 0.25em;
-}
-h3 { /* "Logline" "Film Stills" etc. subsection */
+h3 {
   margin: 1.9em auto 0em auto;
   font-size: 1.1em;
   line-height: 1.1em;
@@ -81,244 +142,101 @@ h3 { /* "Logline" "Film Stills" etc. subsection */
     line-height: 1.4em;
   } 
 }
-h4 { /* "Download" */
-  font-size: 0.9em;
-  line-height: 0.9em;
-  margin-top: 0.25em; 
-}
-h5 { /* "Download with images" */
-  font-size: 0.5em; 
-  margin-top: 0.25em;
-  margin-bottom: 2em;
-}
-
-
-/* ALL p (paragraphs) */
-/* in div .about and not in div .footer */
-.about,
-.intro {
-  width: 90%;
-  margin: 0 auto;
-}
-.about a {  
-  font-style: italic;
-  letter-spacing: 0.14em;
-}
-.about p {
-  margin: 0.5em auto 0.5em auto;
-  font-size: 1em;
-  line-height: 1.4em;
-  letter-spacing: 0.01em;
-}
-.intro p {
-  margin: 0.5em auto 1em auto;
-  font-size: 1.2em;
-  line-height: 1.4em;
-  letter-spacing: 0.01em;
-}
-.quote p { /* quote name */
-  margin: -0.7em auto 2em auto;
-  font-size: 0.8em;
-  line-height: 1.4em;
-  letter-spacing: 0.01em;
-  font-style: italic;
-  text-align: center;
-}
-.quote p:first-child { /* quote text */
-  margin: 1em auto;
-  font-style: normal;
-}
-@media (min-width: 493px) {
-  .about p {
-    margin: 1.5em auto 1.5em auto;
-    font-size: 1.2em;
-    line-height: 1.5em;    
-    max-width: 25em;    
-  }
-  .intro p {
-    margin: 1em auto 2em auto;
-    max-width: 27em;
-    line-height: 1.5em;
-    font-size: 1.2em;    
-  }
-  .quote p { /* quote name */
-    margin: -1.7em auto 2em auto;
-    font-size: 1em;
-    line-height: 1.5em;
-  } 
-  .quote p:first-child { /* quote text */
-    margin: 2em auto;
-  }
-}
-@media (min-width: 920px) {
-  .about p {
-    margin: 2.5em auto 2.5em auto;
-    line-height: 1.6em;
-    max-width: 28em;
-  }
-  .intro p {
-    line-height: 1.6em;
-  }
-  .quote p { /* quote name */
-    margin: -1.7em auto 2em auto;
-    font-size: 1em;
-    line-height: 1.5em;
-  } 
-  .quote p:first-child { /* quote text */
-    margin: 2em auto;
-  }  
-}
-
-
-
-.about .coming-soon {  /* COMING SOON h2 title */
-  font-size: 1.2em;
-  letter-spacing: 0.25em;
-  margin: 0 auto;
-  text-transform: uppercase;
-}
-.coming-soon-content { 
-  margin: 2em auto 2em auto;
-}
-@media (min-width: 920px) {
-  .coming-soon-content {
-    margin: 3em auto;
-  } 
-  .coming-soon-content .about p {
-    margin: 1.5em auto 1.5em auto;
-  }
-}
-
-
-
-/* ALL LINKS */
-a {
-	color:#DBC9BF;
-	text-decoration: none;
-}
-a:hover {
-	color: #8E8683;
-}
-.fa-bars {
-  color:#DBC9BF;
-  text-decoration: none;
-}
-.fa-bars:hover {
-  color: #8E8683;
-}
-.buy-movie-buttons a {
-	color: #785996; /* #6496c8 */
-	border: solid 5px #785996; /* 5px #6496c8 */
-}
-.buy-movie-buttons a:hover {
-	color: #ab8cc9; /* #6496c8 */
-	border: solid 5px #ab8cc9; /* 5px #6496c8 */
-}
-.buy-soundtrack-buttons a {
-	color: #785996; /* #6496c8 */
-	border: solid 5px #785996; /* 5px #6496c8 */
-}
-.buy-soundtrack-buttons a:hover {
-	color: #ab8cc9; /* #6496c8 */
-	border: solid 5px #ab8cc9; /* 5px #6496c8 */
-}
-.watch {
-  color: #785996; /* #6496c8 */
-  border: solid 5px #785996; /* 5px #6496c8 */
-}
-.watch:hover {
-  color: #ab8cc9; /* #6496c8 */
-  border: solid 5px #ab8cc9; /* 5px #6496c8 */
-}
-.watch a {
-  color: #785996; /* #6496c8 */
-}
-.watch a:hover {
-  color: #ab8cc9; /* #6496c8 */
-}
 
 
 /* OTHER GENERAL */
-body { /* picture background */
-	background: url("../images/hold-me-poster-clean.jpg") no-repeat fixed;
-  background-size: cover;
+.content-wrap { 
+  margin: 0;
+  border: none;
 }
-.content-wrap { /* grey background */
-	margin: 5%;
-	background: rgba(0, 0, 0, 0.7); /* grey */
-	border: 1px solid #171819;
-}
-@media (min-width: 1155px) { /* center 1,2,3 */
-	.content-wrap { /* grey background */
-		margin-top: 1em;
-		margin-bottom: 2.5em;
-	}
+.section-title {
+  margin-bottom: 0.75em;
 }
 
 
-/* MAIL CHIMP */
-#mc_embed_signup {
-  clear: left;
-  font-family: KozGoPro-ExtraLight, sans-serif;
-  font-size: 0.8em;
-  line-height: 2em;
-  color: #DBC9BF; /* #DBC9BF pinkish */
-  width: 90%;
-  margin: 0 auto;
+/* COLOURS */
+body, .content-wrap {
+  background-color: #E6D2B0; /* mid wheat colour */
+  color:            #140A0D; /* hair colour */
+}
+.header-div, .footer-div, .footer {
+  background-color: #140A0D; /* hair colour */
+  border: 1px solid #140A0D; /* hair colour */
+  color:            #FFF3DF; /* 2nd wheat colour */  
 }
 
 
-/* FOOTER */
-.footer {
-  line-height: 1em;
-  letter-spacing: 0.055em;
+/* LINKS COLOURS */
+
+/* links in header and footer */
+.header-div a, .footer-div a, .fa-bars {
+  color:            #FFF3DF; /* 2nd wheat colour */
 }
-.social-media-icons {
-  margin-top: 1em;
-  font-size: 2em;
+.header-div a:hover , .footer-div a:hover, .fa-bars:hover {
+  color:            #C3A97C ; /* 4th hair colour */
 }
-.social-media-icons li {  
-  display: inline-block; 
-  margin: auto 0.05em auto 0.05em;
+
+/* links in body and content-wrap */
+a, .short-p a {
+  color:            #140A0D; /* hair colour */
+  text-decoration: none;
 }
-.footer-menu li {
-  display: inline-block; 
-  margin: 1em 1.6em; 
-  font-size: 1.2em;
-  letter-spacing: 0.05em;
-}
-.footer p {
-  margin-top: 0.8em;
-  font-size: 0.4em;
-}
-.footer .bigger {
-  margin-top: 1em;
-  font-size: 0.65em;
-}
-@media (min-width: 400px) {
-  .social-media-icons li {
-    margin: auto 0.38em auto 0.38em;
-  }
-  .footer-menu li { 
-    margin-top: 1.8em;
-    font-size: 1.3em;
-  }
-  .footer .bigger {
-    font-size: 0.7em;
-  }
-  .footer p {
-    margin-top: 1.3em;
-  }
-  .footer {
-    margin: 1.5em auto 1.5em auto;
-  }
+a:hover, .short-p a:hover {
+  color:            #A38552 ; /* 5th hair colour */
 }
 
 
-/*** SOME PAGES, ALL SCREEN SIZES
-**************************************************************************/
+/* banner button links */
+.buy-movie-buttons a {
+  color:            #2b2225; /* dark brown */
+  border: solid 5px #2b2225; /* dark brown */
+}
+.buy-movie-buttons a:hover {
+  color:            #af9f92; /* light brown */
+  border: solid 5px #af9f92; /* light brown */
+}
+
+/* soundtrack button links */
+.buy-soundtrack-buttons a {
+  color:            #785996; /* dark purple */
+  border: solid 5px #785996; /* dark purple */
+}
+.buy-soundtrack-buttons a:hover {
+  color:            #AB8CC9; /* light purple */
+  border: solid 5px #AB8CC9; /* light purple */
+}
+
+/* donate button links */
+.button {
+  color:            #DBC9BF; /* pinkish */
+  background-color: #785996; /* dark purple */
+  box-shadow: 0 6px #A38552; /* dark brown */
+}
+.button:hover {
+  color:            #FFF3DE; /* light yellow */
+  background-color: #AB8CC9; /* light purple */
+  box-shadow: 0 6px #C3A97C; /* light brown */
+}
+.button:active {
+  color:            #FFF3DE; /* light yellow */
+  background-color: #785996; /* dark purple */
+  box-shadow: 0 2px #A38552; /* dark brown */
+  transform: translateY(4px);
+}
+.button a, .watch .button a {
+  color:            #DBC9BF; /* pinkish */
+}
+.button a:hover, .watch .button a:hover {
+  color:            #FFF3DE; /* light yellow */
+}
+
+
 /*** HEADER
 ********************************/
+.smaller-font {
+  font-size: 0.7em;
+  line-height: 3.64em;
+}
 /* HEADER  li's */
 .header > li {
   display: block;  
@@ -329,27 +247,11 @@ body { /* picture background */
   line-height: 2.3em;
   letter-spacing: 0.05em; 
 }
-/* HEADER  watch-bundle */
-.header .watch-bundle li {
-  display: inline-block;
-}
-/* HEADER  watch */
+/* HEADER  watch now donate */
 .header .watch {
   font-size: 1.7em; /* to match image-icon at height 1.75em */ 
-  font-weight: bold;
   line-height: 1.4em;
-  letter-spacing: 0.075em;  
-  border-radius: 0.85em; /* 15px */ 
-  padding: 0.5em 1.3em; /* 10px 25px */
-  display: inline-block;
   margin: 0.15em auto 0.15em auto;
-}
-/* HEADER  video icons */
-.header .icons { /* over-ride over general.css */
-  margin-top: 0em;
-}
-.header .video-icons li { /* over-ride over general.css */
-  display: block;
 }
 /* HEADER MENU */
 /* Stretch menu to the width of content-wrap */
@@ -408,18 +310,14 @@ input[type=checkbox]:checked ~ #menu{
   line-height: 1.5em;
 }
 
-.header .title { /* "Hold Me" title in header & NOT watch/idex page */
-  margin: 0.5em auto;
-}
-
 /* HEADER & HEADER MENU Responsive Styles */
-@media screen and (min-width : 1350px){ /* used to be max */
+@media screen and (min-width : 952px){ /* used to be 1350px */
   .header {
     margin: 0.5em auto;
     min-height: 6.5em;
     border:  none;
   } 
-  .header .title { /* "Hold Me" title in header & NOT watch/idex page */
+  .header .title {
     float: left;
     padding-left: 3em;  
   }
@@ -435,7 +333,7 @@ input[type=checkbox]:checked ~ #menu{
   /*Make dropdown links appear inline*/
   .menu {
     display: block; /* has to say BLOCK to show itself */
-    width: 43em;
+    width: 30em;
   }
   .menu {
     float: right;
@@ -453,357 +351,239 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 
-/*** PAGE MENU 
-********************************/
-.page-menu li {
-  margin: 0.5em auto 0.5em auto;
-}
-/* Hide dropdown links until they are needed */
-.page-menu li ul {
-  display: none;
-}
-/* Style for main and dropdown menu links */
-.page-menu li a {
-  display: block; /* for neater look */
-  height: 1.75em;
-  line-height: 1.75em;
-  font-size: 1.2em; /* to match look of PAGE MENU */
-  letter-spacing: 0.05em; /* to match look of PAGE MENU */
-}
-/* Style for only dropdown links */
-.page-menu li:hover ul a {  
-  height: 1.5em;
-  line-height: 1.5em;
-  font-size: 1em; 
-  margin-top: -0.5em; /* Move menu dropdown links slightly upwards */
-}
-/*Display the dropdown on hover*/
-.page-menu ul li a:hover + .hidden, .hidden:hover {
-  display: block; /* to actually show it*/
-}
-@media (min-width: 920px) {
-  /* Style for only main links */
-  .page-menu > ul > li {
-    display: inline-block;
-    margin: 1em 0.5em;
-  }
-}
-@media (min-width: 1155px) { /* center 1,2,3 */
-  .page-menu > ul > li {
-    margin: 1em 1.5em;
-  }  
-}
-
-
-/* IMDB ICON
-********************************/
-
-.IMDb-icon img {
-  height: 0.9em; /* to center with .click-icon's */
-  margin-top: 0.05em; /* to center with .click-icon's */
-  opacity: 1.0; 
-}
-.IMDb-icon img:hover {
-  opacity: 0.8;
-}
-
-
-/* VIDEO ICONS
-********************************/
-.video-icons {
-  margin-top: 0.5em;
-}
-.video-icons li {
-  display: inline-block;
-  line-height: 1.4em;
-  opacity: 1.0;
-}
-.video-icons li:hover { /* over-ride over general.css */
-  opacity: 0.7;
-}
-.image-icon {
-  height: 1.65em;
-}
-@media (min-width: 400px) {
-  .image-icon {
-    height: 2em; 
-  }
-  .header .image-icon {
-    height: 1.65em; 
-  }
-}
-
-
-/* POSTER */
-.poster { /* POSTER on index/watch.html & press-release.html & record-your-testimonial.html */
-  width: 75%;
-  max-width: 25em;
-  margin: 2em auto;
-}
-.poster-image { /* POSTER on index/watch.html & press-release.html & record-your-testimonial.html */
-    width: 100%;
-}
-.media-room .poster { /* POSTER on press-release.html */
-  max-width: 20em;
-}
-
-
-/* TRAILER */
-.trailer-frame {
-  min-height: 19em;
-  max-width: 30em;
-  width: 95%;
-  margin: 0.5em auto 0em auto;
-}
-@media (min-width: 900px) {
-  .trailer-frame {
-    width: 30em;    
-  } 
-}
-
-
-/* Go-To-The-Top Button
-********************************/
-.go-top {
-  position: fixed;
-  bottom: 2em;
-  right: 2em;
-  text-decoration: none;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.3);
-  font-size: 12px;
-  padding: 0.5em;
-  display: none;
-}
-.go-top i {
-  font-size: 3em;
-}
-.go-top:hover {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-
-/*** PAGE-SPECIFIC, ALL SCREEN SIZES
-**************************************************************************/
-
-/* CAST.html
-********************************/
-.cast-content {
-  margin: 0 auto 3em auto;
-}
-
-
-/* CAST.html & PRESS-RELEASE.html & BEHIND-SCENES.html
-********************************/
-/* MEDIA ROOM FILM STILLS & CAST */
-.tg { /* CAST.html & PRESS-RELEASE.html & BEHIND-SCENES.html */
-  width: 80%;
-  margin: 0 auto 3em auto;
-}
-.cast-image { /* CAST.html & PRESS-RELEASE.html & BEHIND-SCENES.html */
-    width: 90%;
-    max-width: 30em;
-    margin-top: 0.6em;
-}
-/* MEDIA ROOM CAST IMAGES */
-.cast .tg-yw4l { /* CAST IMAGES name & pic block in CAST.html & PRESS-RELEASE.html */
-  margin: 1em auto 0em auto;
-  display: block;
-  width: 90%;
-}
-.cast h4 { /* CAST IMAGES name in CAST.html & PRESS-RELEASE.html */
-  font-size: 1em;
-  max-width: 10em;
-  margin: 1em auto 0em auto;
-}
-@media (min-width: 1150px) {
-  .cast .tg-yw4l  { /* CAST IMAGES name & pic block in CAST.html & PRESS-RELEASE.html */
-      display: inline-block;
-      width: 33%;
-  }
-}
-
-
-/* PRESS-RELEASE.html
-********************************/
-/* MEDIA ROOM FONTS */
-.media-room {
-  margin: 0 auto 2em auto;
-}
-.media-room p { /* also in record-your-testimonial.html */
-  text-align: left;
-}
-.fa-download {
-  margin-top: 0.5em;
-}
-
-
-/* MEDIA ROOM FILM STILLS */
-.film-stills .tg-yw4l {
-    margin: 1em auto 0em auto;
-    display: block;
-    width: 90%;
-}
-@media (min-width: 1150px) {
-  .film-stills .tr li  { /* CAST IMAGES name */
-      display: inline-block;
-      width: 33%;
-  }
-}
-/* MEDIA ROOM CAST IMAGES */
-.cast .tg-yw4l { /* CAST IMAGES name & pic block */
-  margin: 1em auto 0em auto;
-  display: block;
-  width: 90%; 
-}
-.cast h4 { /* CAST IMAGES name */
-  font-size: 1em;
-  max-width: 10em;
-  margin: 1em auto 0em auto;
-}
-@media (min-width: 1150px) {
-  .cast .tr li  { /* CAST IMAGES name */
-      display: inline-block;
-      width: 33%;
-  }
-}
-/* PRESS MENTIONS */
-.press-mentions {
-  width: 70%;
-  margin: 0em auto;
-  margin-bottom: 2em; 
-}
-.press-mentions li {
-  list-style-type: circle;  
-  text-align: left;
-}
-.press-mentions a {  
-  font-style: normal;
+/* LANDING PICTURE BACKGROUNDS */
+/***********************************/
+.landing-image {
   width: 100%;
-  letter-spacing: 0em;
 }
-.press-mentions p {
-  width: 100%;
-  margin: 0.5em auto 0.5em auto;
-  line-height: 1.4em;
-  letter-spacing: 0.01em;
-}
-@media (min-width: 493px) {
-  .press-mentions {
-    max-width: 30em;
-  } 
-  .press-mentions p {
-    line-height: 1.5em;
-    font-size: 1.2em;
-  } 
-}
-@media (min-width: 920px) {
-  .press-mentions p {
-    line-height: 1.6em;
-    font-size: 1.2em;
-    max-width: 28em;
+@media (min-width: 700px) {
+  .landing-image {
+    visibility: hidden;
+  }
+  .landing-div {
+    background: url("../images/hold-me-banner-laurels.jpg") no-repeat fixed;
+    background-size: cover; 
+    background-position: center; 
+    height: 32.5em;
   }
 }
-/* MEDIA ROOM CONTACTS */
-.contacts {
-  margin-bottom: 1em;
+@media (min-width: 952px) {
+  .landing-div {
+    background: url("../images/hold-me-banner-laurels.jpg") no-repeat fixed;
+    background-size: cover; 
+    background-position: center; 
+    height: 38.2em;
+  }
 }
-.contacts p {
-  margin: 0.5em auto 0em auto;
-  line-height: 1em;
+@media (min-width: 1100px) {
+  .landing-div { /* picture background */
+    background: url("../images/hold-me-banner-laurels.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: center; 
+    height: 45em;
+  }
 }
-.contacts .email-image {
-  width: 50%;
-  min-width: 200px;
-  margin-left: 2em;
+
+/* PICTURE BACKGROUNDS */
+/***********************************/
+.picture-1-image,
+.picture-2-image,
+.picture-3-image,
+.picture-4-image,
+.picture-5-image,
+.picture-6-image,
+.picture-7-image,
+.picture-8-image,
+.picture-9-image {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .picture-1-image,
+  .picture-2-image,
+  .picture-3-image,
+  .picture-4-image,
+  .picture-5-image,
+  .picture-6-image,
+  .picture-7-image,
+  .picture-8-image,
+  .picture-9-image {
+    visibility: hidden;
+  }
+  .picture-1-div {
+    background: url("../images/Hold-Me-2016-press-kit/Hold-Me-Film-Pic-1.png") no-repeat fixed;    
+  }
+  .picture-2-div {
+    background: url("../images/Hold-Me-2016-press-kit/Hold-Me-Film-Pic-2.png") no-repeat fixed;
+  }
+  .picture-3-div {
+    background: url("../images/Hold-Me-2016-press-kit/Hold-Me-Film-Pic-3.png") no-repeat fixed;
+  }
+  .picture-4-div {
+    background: url("../images/Hold-Me-2016-press-kit/Hold-Me-Film-Pic-4.png") no-repeat fixed;
+  }
+  .picture-5-div {
+    background: url("../images/Hold-Me-2016-press-kit/Hold-Me-Film-Pic-5.png") no-repeat fixed;
+  }
+  .picture-6-div {
+    background: url("../images/Hold-Me-2016-press-kit/Hold-Me-Film-Pic-6.png") no-repeat fixed;
+  }
+  .picture-7-div {
+    background: url("../images/Hold-Me-2016-press-kit/Hold-Me-Film-Pic-7.png") no-repeat fixed;
+  }
+  .picture-8-div {
+    background: url("../images/Hold-Me-2016-press-kit/Hold-Me-Film-Pic-8.png") no-repeat fixed;
+  }
+  .picture-9-div {
+    background: url("../images/Hold-Me-2016-press-kit/Hold-Me-Film-Pic-9.png") no-repeat fixed;
+  }
+  .picture-1-div,
+  .picture-2-div,
+  .picture-3-div,
+  .picture-4-div,
+  .picture-5-div,
+  .picture-6-div,
+  .picture-7-div,
+  .picture-8-div,
+  .picture-9-div {
+    background-size: cover;
+    background-position: center;
+    height: 20em;
+  }
+  .picture-9-div img { /* to make footer go to the bottom of the page */
+    height: 10em;
+  }
+}
+@media (min-width: 1100px) {
+  .picture-1-div,
+  .picture-2-div,
+  .picture-3-div,
+  .picture-4-div,
+  .picture-5-div,
+  .picture-6-div,
+  .picture-7-div,
+  .picture-8-div,
+  .picture-9-div {
+    height: 30em;
+  }
 }
 
 
-/* CONTACT.html
-********************************/
-.contact-details {
+/*** FULL FILM ***/
+/********************************/
+.full-film {
   margin-bottom: 3em;
 }
-/* other */
-.contact-person {
-  margin: 2em auto;
+.watch-film-p {
+  font-size: 1.15em;
 }
-.contact-person li,
-.right li {
-  display: block;
+.donate-p {
+  font-size: 2em;
+  margin-top: 1em;
 }
-.right p {
-  font-size: 1em;
-  line-height: 1.6em;
+
+.buy-icons {
+  margin-top: 0em;  
 }
-@media (min-width: 710px) {  
-  .contact-person li {
-    display: inline-block;
+@media (min-width: 920px) {
+  .buy-icons {
+    margin-top: 0em;   
   }  
-  .right li {
-    display: block;
+}
+
+.buy-movie-buttons {
+  margin: 0em auto 0em auto;
+}
+.buy-movie-buttons a {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.4em;
+  letter-spacing: 0.075em;  
+  border-radius: 0.85em; /* 15px */ 
+  padding: 0.5em 1.3em; /* 10px 25px */
+  display: inline-block;
+  margin: 0.15em auto 0.15em auto;
+  width: 16em;
+}
+.buy-movie-buttons .fr a:hover {
+  background: url("../images/banner-french.jpg");
+  background-size: 101%;
+  height: 9em;
+}
+.buy-movie-buttons .sp a:hover {
+  background: url("../images/banner-spanish.jpg");
+  background-size: 101%;
+  height: 9em;
+}
+.buy-movie-buttons .gr a:hover {
+  background: url("../images/banner-german.jpg");
+  background-size: 101%;
+  height: 9em;
+}
+.buy-movie-buttons .jp a:hover {
+  background: url("../images/banner-japanese.jpg");
+  background-size: 101%;
+  height: 9em;
+}
+
+@media (min-width: 400px) {
+  .buy-movie-buttons li {
+    display: inline-block;
   }
-  .right {
-    margin: 0.8em 0 0 0.25em;
-    width: 24em;
+}
+
+.donate-buttons button {
+  margin: 0.25em 0;
+}
+.donate-buttons li:first-child {
+  margin: 0.5em 0;
+}
+.donate-buttons img {
+  height: 3em;
+  margin: 1em 0 0 0;
+}
+
+/* DONATE BUTTON */
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  margin: -3em 0 0.5em 0; /*** landing screen mobile higher ***/
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+}
+@media screen and (min-width : 952px){
+  .button {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 0.25em 0 0.5em 0; /*** landing screen mobile higher ***/
   }
 }
-/* profile image */
-.profile-image {
-  width: 3em;
+.paypal-text {
+  position: relative;
+  margin: -1.5em 0 0 0;
+  width: 3.4em;
+  z-index: 1;
 }
-@media (min-width: 493px) {
-  .profile-image {
-    width: 7em;
-  }
-}
-/* email-image */
-.email-image {
-  width: 15em; 
+.paypal-image {
+  position: relative;
+  width: 80px;
+  height: 30px;
+  z-index: 3;
 }
 
 
-/* WATCH/INDEX.html
+/* TRAILER + REVIEWS, OUTTAKES, PANEL
 ********************************/
-/* "Hold Me" .title only on watch/index.html */
-.title p {  /* "Hold Me" watch section title */
-  font-size: 2.3em;
-  line-height: 1.8em;
-  letter-spacing: 0.05em;  
-}
-@media (min-width: 900px) {
-  .title p { /* "Hold Me" watch section title */
-    margin-top: 0.8em;
-    font-size: 2.7em;
-  } 
-}
-
-
-/* BEHIND-SCENES.html
-********************************/
-.video-itself img { /* only behind-scenes.html matches .trailer-frame */
-  max-width: 30em;
-  width: 95%;
-  margin: 0.5em auto 0em auto;
-}
-@media (min-width: 900px) { /* only behind-scenes.html matches .trailer-frame */
-  .video-itself img {
-    width: 30em;
-  } 
-}
-
-
-/* BEHIND-SCENES.html & TESTIMONIALS.html
-********************************/
-/* VIDEO AND TEXT SECTION */
 .videos {
-  /*border: 1px solid red;*/ 
   width: 90%;
-  margin: 2em auto 3em auto;
+  margin: 0 auto 3em auto;
 }
 .video-and-text {
-  /*border: 1px solid red;*/ 
-  margin: 1.75em auto;
+  margin: 0 auto; 
 }
 .video-itself li {
   max-width: 30em; 
@@ -817,6 +597,10 @@ input[type=checkbox]:checked ~ #menu{
 .video-description li:first-child {
   margin: 0.75em auto 0em auto;
 }
+.video-itself img {
+  width: 100%;
+  margin-top: 1em; 
+}
 @media (min-width: 1150px) {
   .video-and-text li {
     display: inline-block;
@@ -829,23 +613,22 @@ input[type=checkbox]:checked ~ #menu{
   }
 }
 /* VIDEO h3 */
-.videos > h3 { /* Only country title not .video-description h3 */
+.videos > h3 {
   margin-top: 4em;  
 }
-.videos > h3:first-child { /* Only country title not .video-description h3 */
+.videos > h3:first-child {
   margin-top: 0em;
 }
 .video-description h3 {
   margin: 0em auto;
-  font-size: 1em; /* 1.1em h3 */
-  line-height: 1.2em; /* 1.1em h3 */
+  font-size: 1em;
+  line-height: 1.2em;
 }
 @media (min-width: 493px) {
   .video-description h3 {
-    font-size: 1.2em; /* 1.4em h3 */
+    font-size: 1.2em;
   } 
 }
-/* VIDEO p (paragraph) */
 .video-description p {
   margin: 0.5em auto 0.5em auto;
   font-size: 1em;
@@ -861,387 +644,291 @@ input[type=checkbox]:checked ~ #menu{
     text-align: left;
   }
 }
-
-
-/* TESTIMONIALS.html
-********************************/
-/* MAP FORMATTING */
-.map-space {
-    margin: 1em;
+/*** TRAILER FRAME ***/
+iframe {
+  border-radius: 10px;
 }
-#map {
-    width: 15em;
-    height: 10em;
-    margin: 0 auto;
-}
-#vmap {
-    width: 100%;
-    height: 100%;
-}
-@media (min-width: 493px) {
-  .map-space {
-    margin: 2em;    
-  }
-  #map {
-    width: 23em;
-    height: 15em;
-  }
-}
-@media (min-width: 700px) {
-  #map {
-    width: 33em;
-    height: 20em;
-  }
+.trailer-frame {
+  min-height: 19em;
+  max-width: 30em;
+  width: 95%;
+  margin: 0.5em auto 0em auto;
 }
 @media (min-width: 900px) {
-  #map {
-    width: 42em;
-    height: 25em;
+  .trailer-frame {
+    width: 30em;    
   }
 }
-
-
-
-/* RECORD-YOUR-TESTIMONIAL.html
-********************************/
-/* Colours */
-.rec-testimonial-content .content-wrap:nth-child(2) {
-  background-color: #140A0D; /* like hair brown; #171819 .content-wrap grey */
-}
-.header-space { /* header pic background */
-  background-color: #140A0D; /* like hair brown; #171819 .content-wrap grey */
-}
-.header-image { /* header pic borders */
-  border-top: 1px solid #140A0D;
-  border-right: 1px solid #140A0D;
-  border-bottom: 1px solid #140A0D;
-  border-left: 1px solid #140A0D;
-}
-.header-image h1,
-.header-image h2 {
-  color: #140A0D; /* hair brown */
-}
-.header-space .page-menu a {
-  color: white;
-}
-.header-space .page-menu a:hover {
-  color: #DBC9BF; /* light #DBC9BF */
-}
-.rec-testimonial-page { /* whole page */
-  color: white; /* or #DBC9BF pinkish */
-  background: #636C6A; /* light grey */ 
-}
-.rec-testimonial-content .content-wrap:first-child  { /* page's content wraps */
-  border: 1px solid #636C6A ; /* light grey */
-  background: #636C6A;
-}
-.content-wrap-middle { 
-  /*background: rgba(24, 14, 12, 0.7);  #180E0C more brown */
-  /*background: rgba(45,27, 22, 0.65);  #2D1B16 */
-  background: rgba(61, 63, 66, 0.65); /* 3D3F42 */
-  border: 0px solid #171819;
-}
-.content-wrap-inner { 
-  /*background: rgba(45,27, 22, 1);   #2D1B16 */
-  background: rgba(61, 63, 66, 1); /* 3D3F42 */
-  border: 0px solid #171819;
-}
-
-
-/* Header picture layout */
-.rec-testimonial-page { /* whole page */
-  border: 0px;
-  margin: 0px;
-  display: block;
-  overflow-x: hidden;
-}
-.rec-testimonial-content { /* page's content wraps */
-  border: 0px;
-  width: 100%;
-  clear: both;
-  margin-top: 19em;
-}
-@media (min-width: 493px) {
-  .rec-testimonial-content  {
-    margin-top: 19em;
-  }
-}
-.header-space { /* header pic background */
-  border: 0px;
-  position: fixed;
-  right: 0%;
-  left: 0%;
-  top: 0;
-  height: 19em;
-}
-@media (min-width: 493px) {
-  .header-space {
-    height: 19em;
-  }
-}
-@media (min-width: 493px) {
-  .header-space .page-menu {
-    margin-top: 6.5em;
-  }
-  .header-space .page-menu > ul > li {
-    display: inline-block;
-    margin: 1em 0.5em;
-  }
+@media (min-width: 1150px) {
+  .trailer .trailer-frame {  
+    margin-top: 5em;
+  } 
 }
 @media (min-width: 920px) {
-  .header-space .page-menu > ul > li {
-    display: inline-block;
-    margin: 1em 0.5em;
-  }
-}
-@media (min-width: 1155px) { 
-  .header-space .page-menu > ul > li {
-    margin: 1em 1.5em;
-  }  
-}
-.header-image { /* header pic background */
-  background-image: url("../images/hold-me-banner-empty.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-@media (min-width: 493px) {
-  .header-image {
-    background-size: 35em;
-    background-position: center;
-  }
-}
-
-
-
-/* Clip videos */
-.rec-testimonial-content .videos li {
-  max-width: 25em;
-  display: inline;
-}
-.rec-testimonial-content .videos .trailer-frame {  
-  max-width: 25em;
-}
-
-
-/* Paragraphs */
-.rec-testimonial-content .about p {
-  text-align: justify;
-}
-.rec-testimonial-content .content-wrap-inner .about p {
-  text-align: left;
-}
-.rec-testimonial-content h1 {
-  margin-top: 2em;
-  margin-bottom: 0em;
-}
-@media (min-width: 920px) { 
-  .rec-testimonial-content h1 {
-    margin-top: 2.5em;
-    margin-bottom: -1em;
-  } 
-}
-
-
-/* HOLD-ME-BANNER image button */
-.banner-button {
-  max-width: 10em;
-  opacity: 1.0;
-  margin: 1em auto 0 auto; 
-}
-@media (min-width: 493px) { 
-  .banner-button {
-    margin: -1.25em auto 0 auto;
-  } 
-}
-@media (min-width: 920px) { 
-  .banner-button {
-    margin: -2em auto 0 auto;
-  } 
-}
-.banner-button img:hover {
-  opacity: 0.7; 
-}
-
-/* "Record" instructions paragraph */
-.widget-image { 
-  max-height: 1.5em;
-}
-.widget-number { 
-  max-height: 1.5em;
-}
-
-/* SPEAKPIPE */
-.speakpipe {
-  margin: 0 auto 1em auto;
-  max-width: 30em;  
-}
-
-/* "Record" title */
-.about .para-title { 
-  font-size: 1.2em; /* 1em in .about p in general.css */
-}
-@media (min-width: 493px) { 
-  .about .para-title {
-    margin: 1em auto 1em auto; /* 1.5em auto 1.5em auto in general.css */
-    font-size: 1.5em; /* 1.2em in general.css */
-    line-height: 1.5em;    
-    max-width: 20em; /* 25em in general.css */
-  } 
-}
-
-/* instructions in "Record" section */
-.small-gaps p { /* needs to be after other p formatting */
-  margin: 0.3em auto 0.3em auto;
-  line-height: 1.5em;
-}
-.small-gaps p:first-child { /* needs to be after other p formatting */
-  margin: 1.3em auto 0.3em auto;
-}
-@media (min-width: 920px) { /* same as testimonials-page.css, making this smaller compared to general.css */
-  .small-gaps p {
-    margin: 0.3em auto 0.3em auto;  
-    max-width: 25em;
-  } 
-}
-
-
-/* CONTENT WRAPS */
-.content-wrap-middle { 
-  margin: 5%;  
-  padding: 3em 0 1em 0;
-}
-.content-wrap-inner { 
-  margin: 5%;
-  padding: 1em 0 3em 0;
-}
-@media (min-width: 920px) { 
-  .content-wrap-middle {
-    margin: 5% auto 5% auto;  
-    max-width: 75%;
-  } 
-  .content-wrap-inner {
-    margin: 5% auto 5% auto;  
-    max-width: 75%;
-  }
-}
-
-/* Rec-your-test.html footer */
-.rec-testimonial-content .content-wrap:nth-child(2) {
-  margin: 0%;
-}
-
-
-/* WATCH/INDEX.html
-********************************/
-/* WATCH SECTION */
-.watch-section > li { /* all "li"s with this parent aka three sections */
-  display: block;
-}
-@media (min-width: 900px) {
-  .watch-section > li { /* all "li"s with this parent aka three sections */
+  .in-line > li {
     display: inline-block;
   }
 }
-/* SOCIAL MEDIA ICONS */
-.social-icons > li {
-  display: inline-block;
-  font-size: 1.5em;
-  line-height: 0.8em;
-  margin: 0.25em 0.25em 0.25em 0.25em;  
-}
-@media (min-width: 900px) {
-  .social-icons > li {
-    display: block;
-    text-align: right;
-    font-size: 1.8em;
-    line-height: 1em;
-    margin: 1em 0.25em 1em auto;
-  } 
-  .social-icons { /* center 1,2 */ /* social media icons div left to trailer */
-    width: 4em; 
-    margin-top: 4em;  
-  }
-}
-.click-icon { /* social media icons left to trailer */
-  line-height: 1em; /* to size it to max of the "a" */
-}
-/* BUY MOVIE BUTTONS */
-.buy-icons {
-  margin-top: 1.25em;     
-}
-@media (min-width: 920px) {
-  .buy-icons {
-    margin-top: 2.5em;   
-  }  
-}
-.buy-movie-buttons {
-  max-width: 17em;
-  margin: 0em auto 0em auto;
-}
-.buy-movie-buttons a {
-  font-size: 1em;
+
+
+/*** REVIEWS ***/
+.reviews  {
   font-weight: bold;
-  line-height: 1.4em;
-  letter-spacing: 0.075em;  
-  border-radius: 0.85em; /* 15px */ 
-  padding: 0.5em 1.3em; /* 10px 25px */
-  display: inline-block;
-  margin: 0.15em auto 0.15em auto;
+  margin-bottom: 3em;
 }
-.buy-movie-buttons-english { 
-    font-size: 1.55em; 
+.reviews > ul > li > ul > li {
+  height: 2em;
+  line-height: 2em;
 }
-@media (min-width: 400px) {
-  .buy-movie-buttons li {
-    display: inline-block;
+.reviews > ul > li > ul > li:first-child {
+  height: 3.5em;
+  line-height: 3.5em;
+  margin: 1.5em 0 0 0;
+}
+@media (min-width: 920px) {
+  .reviews > ul > li > ul > li {
+    margin: 0 0 0 1.5em;
+  }
+  .reviews > ul > li > ul > li:first-child {
+    margin: 0 0 0 1.5em;
   }
 }
-/* WATCH-BOTTOM i.e. laurels and suondtrack */
-.watch-bottom {
-  margin: 0.5em auto 1em auto;
+.reviews-image {
+  border-radius: 10px;
+  width: 7em;
 }
-/* BUY SOUNDTRACK BUTTONS */
-.buy-soundtrack-buttons li {
+.reviews-image:hover {
+  opacity: 0.6; 
+}
+.star-icon {
+  width: 1.5em;
+  margin-top: 0.2em;
+}
+.small-font {
+  font-size: 0.65em;
+  line-height: 3.4em;
+}
+.quote-line {
+  font-style: italic;
+  font-weight: initial;
+  margin-top: -0.5em;
+}
+
+
+/*** MOVIE CLIPS
+********************************/
+.movie-clips {
+  margin-bottom: 3em;
+}
+.movie-clips > ul > li {
+}
+@media (min-width: 920px) { /* see 1,2,3 */
+  .movie-clips > ul > li {
+    max-width: 30%;
+  }
+}
+.movie-clips .video-itself iframe {
+  max-width: 90%;
+  margin: 0.25em 0;
+}
+
+
+/*** SOUNDTRACK
+********************************/
+.soundtrack {
+  margin-bottom: 3em;
+}
+.soundtrack-image {
+  height: 20em;
+  margin-left: 0em; /* to compensate missing space */
+  margin-bottom: 0em; /* for space under the image */
+}
+.soundtrack .buy-soundtrack-buttons li {
+  height: 2.2em;
   display: block;
-  line-height: 4em;
+  line-height: 2.2em;
+  margin: 0.75em 0;
+  padding: 0em;
 }
 .buy-soundtrack-buttons a {
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: bold;
   letter-spacing: 0.075em;
   border-radius: 0.85em; /* 15px */ 
-  padding: 0.5em 1.3em; /* 10px 25px */
+  padding: 0em 1.5em; /* 10px 25px */
 }
-.soundtrack-image {
-  height: 9em;
-  margin-left: -0.2em; /* to compensate missing space */
-  margin-bottom: 0.2em; /* for space under the image */
-}
-/* LAURELS */
-.laurel-image {
-  width: 45%;
-  max-width: 10em;
+@media (min-width: 450px) { /* see 1,2,3 */
+  .soundtrack-image {
+    height: 28em;
+  }
 }
 @media (min-width: 920px) { /* see 1,2,3 */
-  .watch-bottom > li {
-    display: inline-block;
+  .soundtrack-image {
+    margin-bottom: 4em;
   }
-  .laurels {
-    margin-left: 7em;
-  }
-  .laurel-image {
-    width: 10em;
+  .soundtrack .buy-soundtrack-buttons li {
+    margin: 0.75em 7em 0.75em 0;
   }
   .buy-soundtrack-buttons {
     margin-left: 7em;
     margin-top: -4em;
   }
 }
+#short-link a {
+  padding: 0 0.45em 0 0.65em;
+}
+@media (min-width: 400px) {
+  #short-link a {
+    padding: 0em 1.5em;
+  }
+}
 
 
+/* INTERVIEW
+********************************/
+.interview  {
+  margin-bottom: 3em;
+}
+.interview-image img {
+  height: 15%;
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+.interview-image img:hover {
+  opacity: 0.7; 
+}
 
 
+/* POSTER
+********************************/
+.poster {
+  width: 75%;
+  max-width: 25em;
+  margin: 2em auto 3em auto;
+}
+.poster-image {
+    width: 100%;
+}
+.media-room .poster {
+  max-width: 20em;
+}
 
+
+/*** PRESS KIT
+********************************/
+.press-kit {
+  font-style: italic;
+  margin-bottom: 3em;
+}
+.press-kit img {
+  width: 5em;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.press-kit img:hover {
+  opacity: 0.8;
+  margin: 0 auto;
+}
+.fa-download {
+  margin: 0.5em 0 0 0.25em;
+}
+.press-kit #short-p {
+  width: 250px;
+  margin: 0.5em auto 0 auto;
+}
+
+
+/* FOOTER */
+.footer {
+  line-height: 1em;
+  letter-spacing: 0.055em;
+}
+.social-media-icons {
+  margin-top: 1em;
+  font-size: 2em;
+}
+.social-media-icons li {  
+  display: inline-block; 
+  margin: auto 0.05em auto 0.05em;
+}
+.footer-menu li {
+  display: inline-block; 
+  margin: 1em 1.6em; 
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+}
+.footer p {
+  margin-top: 0.8em;
+  font-size: 0.4em;
+}
+.footer .bigger {
+  margin-top: 1em;
+  font-size: 0.65em;
+}
+@media (min-width: 400px) {
+  .social-media-icons li {
+    margin: auto 0.38em auto 0.38em;
+  }
+  .footer-menu li { 
+    margin-top: 1.8em;
+    font-size: 1.3em;
+  }
+  .footer .bigger {
+    font-size: 0.7em;
+  }
+  .footer p {
+    margin-top: 1.3em;
+  }
+  .footer {
+    margin: 1.5em auto 1.5em auto;
+  }
+}
+/* IMDB ICON */
+.IMDb-icon img {
+  height: 0.9em; /* to center with .click-icon's */
+  margin-top: 0.05em; /* to center with .click-icon's */
+  opacity: 1.0; 
+}
+.IMDb-icon img:hover {
+  opacity: 0.8;
+}
+.click-icon { /* social media icons left to trailer */
+  line-height: 1em; /* to size it to max of the "a" */
+}
+
+
+/* Go-To-The-Top Button
+********************************/
+.go-top {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  padding: 0.35em 0.5em;
+  display: none;
+  border-radius: 35px;
+}
+.go-top i {
+  font-size: 3em;
+}
+.go-top:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* MAIL CHIMP */
+#mc_embed_signup {
+  clear: left;
+  font-family: KozGoPro-ExtraLight, sans-serif;
+  font-size: 0.8em;
+  line-height: 2em;
+  color: #DBC9BF; /* #DBC9BF pinkish */
+  width: 90%;
+  margin: 0 auto;
+}
 
 
 

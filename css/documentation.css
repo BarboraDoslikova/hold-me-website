@@ -1,0 +1,130 @@
+/* TABLE OF CONTENTS
+**************************************************************************/
+/*** ALL PAGES, ALL SCREEN SIZES
+
+/*** GENERAL
+  /* Apply a natural box layout model to all elements
+  /* Fix the clearing of floats on child elements
+  /* FONTS
+  /* ALL TITLES
+  /* OTHER GENERAL body, .content-wrap
+
+/* HEADER + MENU 
+  /* .content-wrap .header-div
+    /* .header
+      /* .title
+        /* .smaller-font
+      /* .second
+        /* .watch-bundle
+          /* .watch
+            /* .button
+      /* .third
+        /* .show-menu
+          /* .fa fa-bars
+        /* .menu
+
+/* LANDING 
+  /* .content-wrap .landing-div
+    /* .landing-image
+
+/* FULL FILM 
+  /* .content-wrap
+    /* .section-title
+    /* .full-film
+      /* .watch-film-p
+      /* .buy-icons
+        /* .buy-movie-buttons
+      /* .donate-p
+      /* .donate-buttons
+          /* .button
+            /* .paypal-image
+            /* .paypal-text
+
+/* PICTURE 1
+  /* .content-wrap .picture-1-div
+    /* .picture-1-image
+ 
+/* TRAILER + REVIEWS
+  /* .content-wrap .trailer
+    /* .section-title
+    /* .videos
+      /* .videos-and-text
+        /* .video-itself
+          /* .trailer-frame
+        /* .video-description
+    /* .section-title
+    /* .reviews
+      /* .in-line
+        /* reviews-image
+        /* star-icon
+          /* small-font
+
+/* MOVIE CLIPS
+  /* .content-wrap
+    /* .section-title
+    /* .movie-clips
+      /* .in-line
+        /* .video-itself
+
+/* SOUNDRTRACK
+  /* .content-wrap
+    /* .section-title
+    /* .soundtrack
+      /* .soundtrack-image
+      /* .buy-soundtrack-buttons
+        /* .short-link
+
+/* OUTTAKES (just like TRAILER)
+  /* .content-wrap
+    /* .section-title
+    /* .videos
+      /* .videos-and-text
+        /* .video-itself
+          /* .trailer-frame
+        /* .video-description
+
+/* PANEL (just like TRAILER)
+  /* .content-wrap
+    /* .section-title
+    /* .videos
+      /* .videos-and-text
+        /* .video-itself
+          /* .trailer-frame
+        /* .video-description
+
+/* INTERVIEW WITH TEACE
+  /* .content-wrap
+    /* .section-title
+    /* .interview
+      /* .interview-image
+        /* .trailer-frame
+
+/* POSTER
+  /* .content-wrap
+    /* .section-title
+    /* .poster
+      /* .poster-image
+
+/* PRESS KIT
+  /* .content-wrap
+    /* .section-title
+    /* .press-kit
+      /* .short-p
+        /* .fa fa-download
+
+/* PRESS KIT
+  /* .content-wrap .footer-div
+    /* .footer
+      /* .social-media-icons
+        /* .click-icon
+          /* .fa fa-xxx
+      /* .bigger
+
+/* STICKY GO TO THE TOP BUTTON
+  /* .go-top
+    /* .fa fa-arrow-circle-up
+
+/* MAIL CHIMP
+
+/* END TABLE OF CONTENTS
+**************************************************************************/
